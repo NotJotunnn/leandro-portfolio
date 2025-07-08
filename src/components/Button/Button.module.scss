@@ -1,0 +1,23 @@
+.button {
+  padding: 10px 20px;
+
+  width: 200px;
+
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+
+  transition: all 200ms ease-in;
+
+  &.dark {
+    background-color: #000;
+    color: aliceblue;
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: #853ad0;
+    color: aliceblue;
+    cursor: pointer;
+  }
+}

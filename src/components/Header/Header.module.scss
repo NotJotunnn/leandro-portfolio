@@ -1,0 +1,122 @@
+@use '../../styles/defaultValues';
+
+header {
+  display: flex;
+
+  color: aliceblue;
+
+  font-family: "Roboto", sans-serif;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 70px;
+
+  background-color: defaultValues.$background;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 10;
+}
+
+.headerWrapper {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  width: defaultValues.$width;
+  max-width: 1360px;
+  height: 100%;
+
+  & img {
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+.headerWrapper nav, .headerWrapper ul {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.headerWrapper ul {
+  list-style: none;
+
+  &:first-child {
+    margin-right: 15px;
+  }
+}
+
+.headerWrapper li {
+  font-size: 18px;
+
+  & a {
+    color: aliceblue;
+    text-decoration: none;
+
+    transition: color 200ms ease-in-out;
+
+    position: relative;
+  }
+
+  & a:after {
+    content: "";
+
+    width: 0%;
+    height: 2px;
+
+    background-color: defaultValues.$accent;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: width 400ms ease-in;
+  }
+
+  & a:hover, & a:focus-within {
+    color: defaultValues.$accent;
+  }
+
+  & a:hover:after, & a:focus-within:after {
+    width: 100%;
+  }
+}
+
+.headerWrapper button {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: none;
+  outline: 2px solid defaultValues.$accent;
+
+  padding: 3px;
+
+  cursor: pointer;
+
+  background-color: defaultValues.$accent;
+  color: black;
+
+  &:hover, &:focus-within {
+    background-color: #000;
+    outline: 2px solid #000;
+    color: defaultValues.$accent;
+  }
+
+  & svg {
+    --area: 18px;
+
+    width: var(--area);
+    height: var(--area);
+  }
+}

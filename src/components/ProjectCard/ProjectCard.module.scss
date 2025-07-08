@@ -1,0 +1,214 @@
+@use "../../styles/defaultValues";
+
+.projectCard {
+  display: flex;
+
+  width: 80%;
+
+  & .col1 {
+    width: 80%;
+
+    position: relative;
+
+    cursor: pointer;
+
+    & img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      filter: grayscale(100%);
+
+      transition: filter 200ms ease-in;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: defaultValues.$accent;
+
+      opacity: 0.3;
+
+      transition: opacity 200ms ease-in;
+
+      pointer-events: none;
+    }
+  }
+
+  & .col1:hover {
+    & img {
+      filter: grayscale(0);
+    }
+
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  & .col2 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    width: 50%;
+
+    position: relative;
+
+    text-align: right;
+  }
+
+  & .col2 h3 {
+    font-size: 28px;
+    font-weight: 400;
+  }xf
+
+  & .col2 h4 {
+    font-weight: 400;
+    opacity: .5;
+  }
+
+  & .col2 .tools,
+  & .col2 .externalLinks {
+    display: flex;
+
+    list-style: none;
+    gap: 15px;
+  }
+
+  & .col2 .tools {
+    flex-direction: row-reverse;
+  }
+
+  & .col2 p {
+    color: rgba(0, 0, 0, 0.5);
+
+    font-size: 14px;
+  }
+
+  & .sources {
+    ---area: 18px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    & li {
+      width: var(---area);
+      height: var(---area);
+    }
+
+    & .externalLinks svg {
+      color: rgba(0, 0, 0, 0.5);
+
+      width: var(---area);
+      height: var(---area);
+    }
+  }
+
+  & .col2 .tools li span {
+    color: rgba(0, 0, 0, 0.5);
+
+    font-size: 14px;
+  }
+
+  & .col2 .tools li svg {
+    ---area: 18px;
+    color: rgba(0, 0, 0, 0.5);
+
+    width: var(---area);
+    height: var(---area);
+  }
+
+  & .col2 > .description {
+    display: flex;
+    flex-direction: column;
+
+    align-items: end;
+
+    gap: 15px;
+
+    background-color: rgb(197, 203, 209);
+
+    position: relative;
+    right: 50%;
+
+    border-radius: 4px;
+
+    line-height: 24px;
+
+    width: 150%;
+
+    padding: 15px;
+
+    & p {
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      font-size: 16px;
+      max-height: 200px;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      line-clamp: 5;
+      -webkit-line-clamp: 5;
+    }
+  }
+
+  & .col2 > .description button {
+    padding: 5px 15px;
+
+    width: fit-content;
+
+    background-color: defaultValues.$accent;
+    color: aliceblue;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: all 200ms ease-in;
+
+    &:hover,
+    &:focus-within {
+      background-color: aliceblue;
+      color: black;
+    }
+  }
+
+  &:nth-of-type(odd) {
+    flex-direction: row-reverse;
+
+    & .col2 {
+      text-align: left;
+    }
+
+    & .col2 > .description {
+      align-items: start;
+
+      right: 0;
+    }
+
+    & .sources {
+      flex-direction: row;
+    }
+
+    & .tools {
+      flex-direction: row;
+    }
+  }
+}

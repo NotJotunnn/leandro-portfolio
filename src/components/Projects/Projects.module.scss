@@ -1,0 +1,52 @@
+@use "../../styles/defaultValues";
+
+.project {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  padding-block: 50px;
+
+  background-color: #ddd;
+}
+
+.projectWrapper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: defaultValues.$width;
+  height: 100%;
+
+  gap: 35px;
+
+  & > h2 {
+    font-size: 44px;
+
+    padding: 0 15px;
+  }
+
+  & > h3 {
+    font-size: 24px;
+    font-weight: 500;
+
+    padding: 0 25px;
+
+    text-align: center;
+
+    width: 100vw;
+  }
+
+  & hr {
+    width: 100px;
+    height: 1px;
+
+    border: 2px solid defaultValues.$accent;
+    border-radius: 4px;
+  }
+}

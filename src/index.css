@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900.buttonGroup buttonfamily=Roboto:ital,wght@0,100..900;1,100..900.buttonGroup buttondisplay=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  
+  background-color: #1c1c1c;
+}
+
+span.highlight {
+  font-weight: 600;
+  color: #853ad0;
+}
+
+span.italic {
+  font-style: italic;
+}
+
+.buttonGroup {
+  display: flex;
+
+  width: 100%;
+
+  gap: 15px;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}

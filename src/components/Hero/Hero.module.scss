@@ -1,0 +1,101 @@
+@use "../../styles/defaultValues";
+
+// TODO add transitions for buttons
+// TODO add mobile responsiveness
+
+.hero {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  background-image: url("/assets/ilya-pavlov-unsplash-hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: aliceblue;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.heroBackground {
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: defaultValues.$transparent-background;
+
+  z-index: 0;
+}
+
+.heroWrapper {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  width: defaultValues.$width;
+  height: 82vh;
+
+  z-index: 1;
+
+  gap: 35px;
+
+  & .col1, & .col2 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: left;
+
+    height: 100%;
+
+    gap: 25px;
+  }
+
+  & .col2 {
+    align-items: right;
+  }
+
+  & img {
+    --area: 500px;
+
+    width: var(--area);
+    height: var(--area);
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid transparent;
+    outline: 4px solid defaultValues.$accent;
+
+    box-shadow: 10px 10px 10px black;
+  }
+
+  & h1 {
+    font-size: 28px;
+
+    color: aliceblue;
+  }
+
+  & .name {
+    display: block;
+    color: black;
+
+    font-size: 54px;
+
+    text-shadow: 2px 0px 1px defaultValues.$accent, 0px 2px 1px defaultValues.$accent, 
+    -2px 0px 1px defaultValues.$accent, 0px -2px 1px defaultValues.$accent,
+    2px 2px 1px defaultValues.$accent, -2px -2px 1px defaultValues.$accent, 
+    2px -2px 1px defaultValues.$accent, -2px 2px 1px defaultValues.$accent;
+  }
+}

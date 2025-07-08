@@ -1,0 +1,11 @@
+@use "../../styles/defaultValues";
+
+.projectGroup {
+  display: flex;
+  flex-direction: column;
+
+  gap: 90px;
+
+  justify-content: center;
+  align-items: center;
+}
