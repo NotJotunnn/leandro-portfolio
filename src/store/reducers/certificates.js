@@ -4,31 +4,31 @@ const initialState = [
   {
     title: "React: Utilizando a arquitetura Saga com Redux Saga",
     company: "Alura",
-    issuedDate: "Issued Jul 2025",
+    issuedDate: "Lançado Jul 2025",
     credential: {
       id: "714067f0-4937-47a8-bdb0-1335f1df42f4",
       url: "https://cursos.alura.com.br/certificate/714067f0-4937-47a8-bdb0-1335f1df42f4?lang",
     },
     skills: ["Redux toolkit", "Saga"],
     thumb:
-      "assets/certificates/React utilizando a arquitetura Saga com Redux Saga.png",
+      "/assets/experiences/certificates/React utilizando a arquitetura Saga com Redux Saga.png",
   },
   {
     title: "JavaScript: Programação Orientada a Objetos",
     company: "Alura",
-    issuedDate: "Issued Jun 2025",
+    issuedDate: "Lançado Jun 2025",
     credential: {
       id: "e39d1def-ada0-4556-9109-41c8cbe22e06",
       url: "https://cursos.alura.com.br/certificate/e39d1def-ada0-4556-9109-41c8cbe22e06?lang",
     },
     skills: ["Git", "Object-Oriented Programming (OOP)", "Node.js", "GitHub"],
-    thumb: "assets/certificates/Javascript orientado a objetos.png",
+    thumb: "assets/experiences/certificates/Javascript orientado a objetos.png",
   },
   {
     title:
       "Node.js: Criando API Rest com autenticação, perfis de usuários e permissões",
     company: "Alura",
-    issuedDate: "Issued Jun 2025",
+    issuedDate: "Lançado Jun 2025",
     credential: {
       id: "05dbef43-2c2f-4863-b645-ad08f7f85e52",
       url: "https://cursos.alura.com.br/certificate/05dbef43-2c2f-4863-b645-ad08f7f85e52?lang",
@@ -40,12 +40,12 @@ const initialState = [
       "Back-End Web Development",
     ],
     thumb:
-      "assets/certificates/NodeJS criando API Rest com autenticação, perfis de usuários e permissões.png",
+      "assets/experiences/certificates/NodeJS criando API Rest com autenticação, perfis de usuários e permissões.png",
   },
   {
     title: "Node.js: Criptografia e tokens JWT",
     company: "Alura",
-    issuedDate: "Issued Jun 2025",
+    issuedDate: "Lançado Jun 2025",
     credential: {
       id: "f7c4d8f2-eb14-4d57-8956-b72c1255ee5b",
       url: "https://cursos.alura.com.br/certificate/f7c4d8f2-eb14-4d57-8956-b72c1255ee5b?lang",
@@ -58,12 +58,12 @@ const initialState = [
       "GitHub",
       "Back-End Web Development",
     ],
-    thumb: "assets/certificates/Nodejs criptografia e tokens JWT.png",
+    thumb: "assets/experiences/certificates/Nodejs criptografia e tokens JWT.png",
   },
   {
     title: "Node.js: Implementando testes em uma API Rest",
     company: "Alura",
-    issuedDate: "Issued Jun 2025",
+    issuedDate: "Lançado Jun 2025",
     credential: {
       id: "9ed5f44e-fcc4-4e48-bc32-71f4e5897b28",
       url: "https://cursos.alura.com.br/certificate/9ed5f44e-fcc4-4e48-bc32-71f4e5897b28?lang",
@@ -78,12 +78,12 @@ const initialState = [
       "SQLite",
       "Back-End Web Development",
     ],
-    thumb: "assets/certificates/nodejsimplementandotestesemumaapirest.jpeg",
+    thumb: "assets/experiences/certificates/nodejsimplementandotestesemumaapirest.jpeg",
   },
   {
     title: "Nodejs: Autenticação, Passport e OAuth 2.0",
     company: "Alura",
-    issuedDate: "Issued Jun 2025",
+    issuedDate: "Lançado Jun 2025",
     credential: {
       id: "1fa1a66b-4c55-423e-b0ef-242e3c7745ff",
       url: "https://cursos.alura.com.br/certificate/1fa1a66b-4c55-423e-b0ef-242e3c7745ff?lang",
@@ -95,60 +95,60 @@ const initialState = [
       "Passport.js",
       "Docker",
     ],
-    thumb: "assets/certificates/NodeJS Autenticação, Passport e OAuth 2.0.png",
+    thumb: "assets/experiences/certificates/NodeJS Autenticação, Passport e OAuth 2 0.png",
   },
   {
     title: "React: Avançando em Middlewares com Listener Middleware",
     company: "Alura",
-    issuedDate: "Issued Jun 2025",
+    issuedDate: "Lançado Jun 2025",
     credential: {
       id: "67873266-bf17-4de2-851d-d45db8877246",
       url: "https://cursos.alura.com.br/certificate/67873266-bf17-4de2-851d-d45db8877246?lang",
     },
     skills: ["Redux Toolkit", "Axios"],
     thumb:
-      "assets/certificates/React avançando em Middlewares com Listener Middleware.png",
+      "assets/experiences/certificates/React avançando em Middlewares com Listener Middleware.png",
   },
   {
     title: "React: Entendendo Middlewares com Redux Thunk",
     company: "Alura",
-    issuedDate: "Issued Jun 2025",
+    issuedDate: "Lançado Jun 2025",
     credential: {
       id: "108fa2c6-5997-4bf8-b74b-9be691b03561",
       url: "https://cursos.alura.com.br/certificate/108fa2c6-5997-4bf8-b74b-9be691b03561?lang",
     },
     skills: ["Redux toolkit", "Axios", "Redux Thunk"],
     thumb:
-      "assets/certificates/React entendendo Middlewares com Redux Thunk.png",
+      "assets/experiences/certificates/React entendendo Middlewares com Redux Thunk.png",
   },
   {
     title: "React: Gerenciamento de estados globais com Redux",
     company: "Alura",
-    issuedDate: "Issued Jun 2025",
+    issuedDate: "Lançado Jun 2025",
     credential: {
       id: "e48e1a24-ae00-4053-9cc4-58f80c2832f8",
       url: "https://cursos.alura.com.br/certificate/e48e1a24-ae00-4053-9cc4-58f80c2832f8?lang",
     },
     skills: ["Redux toolkit"],
     thumb:
-      "assets/certificates/React gerenciamento de estados globais com Redux.png",
+      "assets/experiences/certificates/React gerenciamento de estados globais com Redux.png",
   },
   {
     title: "React: Mutabilidade x Imutabilidade no Redux Toolkit com Immer",
     company: "Alura",
-    issuedDate: "Issued Jun 2025",
+    issuedDate: "Lançado Jun 2025",
     credential: {
       id: "05e316ea-2ee8-401c-a77b-cdfed9c54a05",
       url: "https://cursos.alura.com.br/certificate/05e316ea-2ee8-401c-a77b-cdfed9c54a05?lang",
     },
     skills: ["Redux toolkit"],
     thumb:
-      "assets/certificates/React Mutabilidade x Imutabilidade no Redux Toolkit com Immer.png",
+      "assets/experiences/certificates/React Mutabilidade x Imutabilidade no Redux Toolkit com Immer.png",
   },
   {
     title: "JavaScript Algorithms and Data Structures",
     company: "freeCodeCamp",
-    issuedDate: "Issued May 2025",
+    issuedDate: "Lançado May 2025",
     credential: {
       id: "leandro_ferreira-jaads",
       url: "https://freecodecamp.org/certification/Leandro_Ferreira/javascript-algorithms-and-data-structures-v8",
@@ -161,12 +161,12 @@ const initialState = [
       "REST APIs",
       "Node.js",
     ],
-    thumb: "assets/certificates/javascript algo.jpeg",
+    thumb: "assets/experiences/certificates/javascript algo.jpeg",
   },
   {
     title: "Node.js: Testes unitários e de integração",
     company: "Alura",
-    issuedDate: "Issued May 2025",
+    issuedDate: "Lançado May 2025",
     credential: {
       id: "5a129c84-7fc2-416b-92f6-d5c75bf389b6",
       url: "https://cursos.alura.com.br/certificate/5a129c84-7fc2-416b-92f6-d5c75bf389b6?lang",
@@ -181,12 +181,12 @@ const initialState = [
       "Back-End Web Development",
     ],
     thumb:
-      "assets/certificates/Certificado de node integração de testes alura.jpeg",
+      "assets/experiences/certificates/Certificado de node integração de testes alura.jpeg",
   },
   {
     title: "Graduação em Ciências da computação",
     company: "UniCEUB - Centro Universitário de Brasília",
-    issuedDate: "Issued Jun 2024",
+    issuedDate: "Lançado Jun 2024",
     credential: {
       id: "402.402.0d88e8f1cae6335608b309c3e41260d97d16",
       url: "https://www.sgi.uniceub.br/consultardiploma.aspx",
@@ -213,12 +213,12 @@ const initialState = [
       "Back-End Web Development",
     ],
     thumb:
-      "assets/certificates/RVDD_Leandro Ferreira_402.402.0d88e8f1cae6335608b309c3e41260d97d16.pdf",
+      "assets/experiences/certificates/RVDD_Leandro_Ferreira.png",
   },
   {
     title: "Responsive Web Design",
     company: "freeCodeCamp",
-    issuedDate: "Issued Mar 2024",
+    issuedDate: "Lançado Mar 2024",
     credential: {
       id: "leandro_ferreira-rwd",
       url: "https://freecodecamp.org/certification/Leandro_Ferreira/responsive-web-design",
@@ -230,12 +230,12 @@ const initialState = [
       "Front-End Design",
       "HTML5",
     ],
-    thumb: "assets/certificates/freecodecampcertificate.jpeg",
+    thumb: "assets/experiences/certificates/freecodecampcertificate.jpeg",
   },
   {
     title: "Especializar",
     company: "Rocketseat",
-    issuedDate: "Issued Apr 2023",
+    issuedDate: "Lançado Apr 2023",
     credential: {
       id: "9c98d864-a583-439b-bb15-fb0258a2d93d",
       url: "https://app.rocketseat.com.br/certificates/9c98d864-a583-439b-bb15-fb0258a2d93d",
@@ -253,15 +253,15 @@ const initialState = [
       "NodeJS",
       "Back-End Web Development",
     ],
-    thumb: "assets/certificates/discover-especializar-certificate.pdf",
+    thumb: "assets/experiences/certificates/discover-especializar-certificate.png",
   },
   {
     title: "Certificado de participação no desenvolvimento de software",
     company: "CleverSystems",
-    issuedDate: "Issued Mar 2023",
+    issuedDate: "Lançado Mar 2023",
     credential: {
-      id: "assets/certificates/",
-      url: "http://projetointegrador.cleversystems.net/certificados/ceub022022/07629876181.pdf",
+      id: "assets/experiences/certificates/",
+      url: "http://projetointegrador.cleversystems.net/certificados/ceub022022/07629876181.png",
     },
     skills: [
       "Web Development",
@@ -276,12 +276,12 @@ const initialState = [
       "HTML5",
       "Back-End Web Development",
     ],
-    thumb: "assets/certificates/cleversystemscertificate.pdf",
+    thumb: "assets/experiences/certificates/cleversystemscertificate.png",
   },
   {
     title: "Conectar",
     company: "Rocketseat",
-    issuedDate: "Issued Jul 2022",
+    issuedDate: "Lançado Jul 2022",
     credential: {
       id: "3cfde74c-57ec-47a1-bd00-31db0100f8c7",
       url: "https://app.rocketseat.com.br/certificates/3cfde74c-57ec-47a1-bd00-31db0100f8c7",
@@ -298,12 +298,12 @@ const initialState = [
       "HTML5",
       "Back-End Web Development",
     ],
-    thumb: "assets/certificates/discover-conectar-certificate.pdf",
+    thumb: "assets/experiences/certificates/discover-conectar-certificate.png",
   },
   {
     title: "Fundamentar",
     company: "Rocketseat",
-    issuedDate: "Issued Jul 2022",
+    issuedDate: "Lançado Jul 2022",
     credential: {
       id: "6c1dd1a8-d098-4b13-9b54-910b746592e3",
       url: "https://app.rocketseat.com.br/certificates/6c1dd1a8-d098-4b13-9b54-910b746592e3",
@@ -324,66 +324,66 @@ const initialState = [
       "React Hooks",
       "Front-End Design",
       "HTML5",
-      "Back-End Web Developmen",
+      "Back-End Web Development",
     ],
-    thumb: "assets/certificates/discover-fundamentar-certificate.pdf",
+    thumb: "assets/experiences/certificates/discover-fundamentar-certificate.png",
   },
   {
     title: "Sistema Eletrônico de Informações - SEI! USAR",
     company: "Enap",
-    issuedDate: "Issued Feb 2022",
+    issuedDate: "Lançado Feb 2022",
     credential: {
       id: "to8I6133773Y4ey",
       url: "https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=to8I6133773Y4ey",
     },
     skills: [],
     thumb:
-      "assets/certificates/Sistema Eletrônico de Informações - SEI! USAR.pdf",
+      "assets/experiences/certificates/SistemaEletronicodeInformacoesSEIUSAR.png",
   },
   {
     title: "Certificado de inteligência Emocional",
     company: "Conquer",
-    issuedDate: "Issued May 2021",
+    issuedDate: "Lançado May 2021",
     credential: {
       id: "",
       url: "",
     },
     skills: [],
     thumb:
-      "assets/certificates/CERTIFICADO CONQUER DE INTELIGÊNCIA EMOCIONAL.pdf",
+      "assets/experiences/certificates/CERTIFICADO CONQUER DE INTELIGÊNCIA EMOCIONAL.png",
   },
   {
     title: "Aprender a aprender: técnicas para seu autodesenvolvimento",
     company: "Alura",
-    issuedDate: "Issued May 2025",
+    issuedDate: "Lançado May 2025",
     credential: {
       id: "e1a92c12-75fe-45d1-94a1-66b35bf9e22e",
       url: "https://cursos.alura.com.br/certificate/e1a92c12-75fe-45d1-94a1-66b35bf9e22e?lang",
     },
     skills: [],
-    thumb: "assets/certificates/Certificado de aprender a aprender alura.jpeg",
+    thumb: "assets/experiences/certificates/Certificado de aprender a aprender alura.jpeg",
   },
   {
     title: "Campus Party",
     company: "Instituto Campus Party",
-    issuedDate: "Issued April 2023",
+    issuedDate: "Lançado April 2023",
     credential: {
       id: "bm92bzEyMTYxNF8",
       url: "https://app.4.events/c/18443/certificado/bm92bzEyMTYxNF8=#/",
     },
     skills: [],
-    thumb: "assets/certificates/certificadocampus.pdf",
+    thumb: "assets/experiences/certificates/certificadocampus.png",
   },
   {
     title: "Fotografia: fotografe usando seu celular",
     company: "Alura",
-    issuedDate: "Issued June 2025",
+    issuedDate: "Lançado June 2025",
     credential: {
       id: "5ac7d921-6d74-4742-a722-8a1f92ec12a1",
       url: "https://cursos.alura.com.br/certificate/5ac7d921-6d74-4742-a722-8a1f92ec12a1?lang",
     },
     skills: [],
-    thumb: "assets/certificates/fotografiafotografeusandoseucelular.jpeg",
+    thumb: "assets/experiences/certificates/fotografiafotografeusandoseucelular.jpeg",
   },
 ];
 

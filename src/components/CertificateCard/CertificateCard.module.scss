@@ -1,0 +1,72 @@
+@use "../../styles/defaultValues";
+
+a:last-child .card {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+  height: 250px;
+
+  gap: 15px;
+
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+
+  padding: 20px 50px;
+
+  & .col1 {
+    min-width: 250px;
+    max-width: 250px;
+    height: 150px;
+    overflow: hidden;
+
+    background-color: grey;
+
+    & img {
+      height: 100%;
+
+      object-fit: cover;
+
+      transition: scale 200ms ease-in-out;
+
+      cursor: pointer;
+    }
+
+    &:hover img {
+        scale: 1.2;
+      }
+  }
+
+  & .col2 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    height: 100%;
+
+    justify-content: center;
+
+    text-align: left;
+
+    padding-block: 15px;
+
+    color: black;
+
+    & h5 {
+      font-size: 18px;
+    }
+
+    & p {
+      opacity: 0.5;
+
+      line-height: 24px;
+    }
+  }
+}

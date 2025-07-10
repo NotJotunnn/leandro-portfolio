@@ -25,9 +25,9 @@ abbr:hover::after {
   align-items: center;
 
   gap: 5px;
-  
+
   text-transform: capitalize;
-  
+
   position: absolute;
   top: 100%;
   right: -100%;
@@ -39,7 +39,7 @@ abbr:hover::after {
   margin-right: auto;
 
   text-align: center;
-  
+
   background-color: #1c1c1c;
   color: aliceblue;
   border-radius: 4px;
@@ -72,6 +72,10 @@ span.italic {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif;
 }

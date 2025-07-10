@@ -1,8 +1,12 @@
 import { useSelector } from "react-redux";
 import styles from "./PageContainer.module.scss";
-import ExperienceCard from "../ExperienceCard";
+import ExperiencePage from "../ExperiencePage";
+import CertificatePage from "../CertificatePage";
+import StudyPage from "../StudyPage";
+import TestimonialPage from "../TestimonialPage";
 
 // ? Arrumar o scroll dentro das páginas (TEST)
+// TODO add popup component for viewing images
 const PageContainer = () => {
   const position = useSelector((state) => state.position);
 
@@ -14,17 +18,10 @@ const PageContainer = () => {
         }}
         className={styles.containerWrapper}
       >
-        <div className={styles.experiencePage}>
-          <div className={styles.pageWrapper}>
-            <h4>Experiências</h4>
-            <div className={styles.cardGroup}>
-              <ExperienceCard />
-            </div>
-          </div>
-        </div>
-        <div className={styles.certificatesPage}></div>
-        <div className={styles.studyPage}></div>
-        <div className={styles.testimonialsPage}></div>
+        <ExperiencePage />
+        <CertificatePage />
+        <StudyPage />
+        <TestimonialPage />
       </div>
     </div>
   );

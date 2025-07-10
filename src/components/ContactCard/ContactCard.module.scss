@@ -1,0 +1,70 @@
+@use "../../styles/defaultValues";
+
+.contact {
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+  height: fit-content;
+
+  padding-block: 10px;
+
+  gap: 10px;
+
+  cursor: pointer;
+
+  & img {
+    --area: 40px;
+
+    width: var(--area);
+    height: var(--area);
+
+    border-radius: 50%;
+  }
+
+  & .contactMetaData {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    text-align: left;
+
+    margin-right: auto;
+
+    & h6 {
+      font-size: 14px;
+    }
+
+    & p {
+      display: flex;
+
+      align-items: center;
+
+      font-size: 14px;
+      opacity: 0.5;
+
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+      overflow: hidden;
+
+      & svg {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  & .lastMessaged {
+    display: flex;
+    align-items: start;
+    font-size: 12px;
+    opacity: 0.5;
+
+    align-self: start;
+  }
+}

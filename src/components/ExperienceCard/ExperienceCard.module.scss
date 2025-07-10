@@ -63,5 +63,29 @@
 
     padding: 15px;
     border-radius: 4px;
+
+    & p {
+      text-align: justify;
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      
+      gap: 5px;
+
+      margin-top: 20px;
+      list-style: none;
+
+      & li {
+        text-align: left;
+
+        font-size: 14px;
+        
+        & a {
+          color: defaultValues.$accent;
+        }
+      }
+    }
   }
 }

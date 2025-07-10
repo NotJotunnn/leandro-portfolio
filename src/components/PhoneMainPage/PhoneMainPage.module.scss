@@ -1,0 +1,100 @@
+@use "../../styles/defaultValues";
+
+.allContacts {
+  flex-grow: 1;
+
+  transition: translate 400ms ease-in-out, background-color 400ms ease-in-out,
+    filter 400ms ease-in-out;
+  filter: brightness(100%);
+
+  background-color: white;
+
+  &.chatFocus {
+    translate: -50%;
+    background-color: grey;
+    filter: brightness(50%);
+  }
+
+  & h5 {
+    color: green;
+    font-size: 24px;
+    font-weight: 500;
+
+    margin-bottom: 15px;
+
+    text-align: left;
+  }
+
+  & .content {
+    width: 100%;
+    height: fit-content;
+
+    overflow-y: scroll;
+
+    flex-grow: 1;
+  }
+
+  & .contactList {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  & .searchBar {
+    display: flex;
+
+    align-items: center;
+
+    background-color: #ccc;
+
+    padding: 10px;
+
+    border-radius: 20px;
+
+    margin-bottom: 15px;
+
+    gap: 5px;
+
+    & svg {
+      opacity: 0.5;
+    }
+
+    & input {
+      flex-grow: 1;
+
+      background-color: transparent;
+      border: none;
+
+      outline: none;
+    }
+  }
+}
+
+.cellphoneMetaData {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 10px 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  gap: 5px;
+
+  z-index: 4;
+
+  & p {
+    font-size: 12px;
+  }
+
+  & .time {
+    margin-right: auto;
+  }
+}

@@ -1,23 +1,31 @@
+import { useSelector } from "react-redux";
 import styles from "./ExperienceCard.module.scss";
+import { FaFileDownload } from "react-icons/fa";
 
-const ExperienceCard = () => {
+const ExperienceCard = ({ index }) => {
+  const { title, field, date, description, filesLocation } = useSelector(
+    (state) => state.experiences[index]
+  );
   return (
     <div className={styles.card}>
       <div className={styles.col1}>
-        <h5>Graduação</h5>
-        <h6>Uniceub</h6>
-        <p>11/02/2020 - 03/07/2024</p>
+        <h5>{title}</h5>
+        <h6>{field}</h6>
+        <p>{date}</p>
       </div>
       <div className={styles.col2}>
-        <p>
-          Fiz minha <span class="highlight">graduação</span> no modelo{" "}
-          <span class="highlight">bacharelado</span>, onde{" "}
-          <span class="highlight">estudei</span> e{" "}
-          <span class="highlight">pratiquei</span> habilidades e conhecimentos
-          importantes para minha <span class="highlight">área de atuação</span>{" "}
-          com <span class="highlight">especialização</span> em desenvolvimento{" "}
-          <span class="highlight">frontend</span>.
-        </p>
+        <p dangerouslySetInnerHTML={{__html: description}}></p>
+        {filesLocation.length > 0 && (
+          <ul>
+            {filesLocation.map((file, index) => (
+              <li key={index}>
+                <a download href={file.location}>
+                  {file.name} <FaFileDownload />
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

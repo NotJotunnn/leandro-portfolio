@@ -1,0 +1,48 @@
+@use "../../styles/defaultValues";
+
+.card {
+  display: flex;
+
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: left;
+
+  padding: 15px;
+
+  border-top: 2px solid rgba(128, 128, 128, 0.5);
+
+  &:last-child {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+  }
+
+  & .metaData {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  & h5 {
+    font-size: 18px;
+  }
+
+  & p {
+    opacity: .5;
+  }
+
+  & a svg {
+    --area: 30px;
+
+    opacity: .5;
+
+    width: var(--area);
+    height: var(--area);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
