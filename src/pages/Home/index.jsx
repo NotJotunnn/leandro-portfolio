@@ -1,6 +1,7 @@
 // import styles from "./Home.module.scss";
 
 import About from "../../components/About";
+import Experiences from "../../components/Experiences";
 import Hero from "../../components/Hero";
 import Projects from "../../components/Projects";
 
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <About />
       <Projects />
+      <Experiences />
     </div>
   );
 };

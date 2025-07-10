@@ -1,53 +1,48 @@
 import { Link } from "react-router-dom";
 import styles from "./ProjectCard.module.scss";
 import TechIcon from "../TechIcon";
-import projects from "../../store/Projects";
-import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 const ProjectCard = (props) => {
-  const { description, tech, thumb, name, links, id } = props;
-  const [ currentProject, setCurrentProject ] = useState()
-
-  useEffect(() => {
-    setCurrentProject(projects.find(project => project.summary.id === id))
-  }, [id])
+  const { id } = props;
+  const { summary, page } = useSelector(state => state.projects.find(project => project.summary.id === id))
 
   return (
     <div className={styles.projectCard}>
       <div className={styles.col1}>
-        <Link target="_blank" to={links.externalLink || links.github || links.figma}><img src={thumb} alt={name} /></Link>
+        <Link target="_blank" to={summary.links.externalLink || summary.links.github || summary.links.figma}><img src={summary.thumb} alt={summary.name} /></Link>
       </div>
       <div className={styles.col2}>
-        <h3>{name}</h3>
+        <h3>{summary.name}</h3>
 
-        <h4>{`${currentProject?.page?.jobs[0]}${currentProject?.page?.jobs[1] ? ", " + currentProject?.page?.jobs[1] : ""}`}</h4>
+        <h4>{`${page.jobs[0]}${page.jobs[1] ? ", " + page.jobs[1] : ""}`}</h4>
 
         <div className={styles.description}>
-          <p dangerouslySetInnerHTML={{ __html: description }}></p>
+          <p dangerouslySetInnerHTML={{ __html: summary.description }}></p>
 
           <div className={styles.sources}>
             <Link to={`/projects/${id}`}>
               <button>Leia mais</button>
             </Link>
             <ul className={styles.externalLinks}>
-              {links?.github && (
-                <Link target="_blank" to={links.github}>
+              {summary.links?.github && (
+                <Link target="_blank" to={summary.links.github}>
                   <li>
-                    <TechIcon name={"github"} />
+                    <TechIcon hasLink={true} name={"github"} />
                   </li>
                 </Link>
               )}
-              {links?.figma && (
-                <Link target="_blank" to={links.figma}>
+              {summary.links?.figma && (
+                <Link target="_blank" to={summary.links.figma}>
                   <li>
-                    <TechIcon name={"figma"} />
+                    <TechIcon hasLink={true} name={"figma"} />
                   </li>
                 </Link>
               )}
-              {links?.externalLink && (
-                <Link target="_blank" to={links.externalLink}>
+              {summary.links?.externalLink && (
+                <Link target="_blank" to={summary.links.externalLink}>
                   <li>
-                    <TechIcon name={"external"} />
+                    <TechIcon hasLink={true} name={"external"} />
                   </li>
                 </Link>
               )}
@@ -56,7 +51,7 @@ const ProjectCard = (props) => {
         </div>
 
         <ul className={styles.tools}>
-          {tech?.map((tool, index) => (
+          {summary.tech?.map((tool, index) => (
             <li key={index}>
               <TechIcon name={tool} />
             </li>

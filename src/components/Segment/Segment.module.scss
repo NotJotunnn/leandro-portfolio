@@ -1,0 +1,46 @@
+@use "../../styles/defaultValues";
+
+.buttonGroup {
+    display: flex;
+
+    margin-top: 15px;
+
+    border-radius: 4px;
+
+    box-shadow: inset 2px 2px 5px black;
+
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+
+      width: 200px;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      translate: calc(var(--position) * 200px);
+
+      background-color: defaultValues.$accent;
+      border-radius: 4px;
+
+      transition: translate 400ms ease-in-out;
+
+      z-index: -1;
+    }
+
+    & button {
+      width: 200px;
+      padding: 10px;
+
+      background-color: transparent;
+      border: none;
+
+      color: aliceblue;
+
+      cursor: pointer;
+    }
+  }

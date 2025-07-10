@@ -3,7 +3,8 @@ import { FaDocker, FaFigma, FaNodeJs, FaReact } from "react-icons/fa";
 import { RiExternalLinkLine, RiGithubLine, RiNextjsFill } from "react-icons/ri";
 import { SiAxios, SiExpress, SiPostgresql, SiPrisma } from "react-icons/si";
 
-const TechIcon = ({ name, ...otherProps }) => {
+const TechIcon = ({ name, hasLink, ...otherProps }) => {
+  const title = hasLink ? `${name} (link)` : name;
   const iconsArray = {
     figma: FaFigma,
     nodejs: FaNodeJs,
@@ -24,7 +25,7 @@ const TechIcon = ({ name, ...otherProps }) => {
   if (!IconComponent) return <span>{name}</span>;
 
   return (
-    <abbr title={name}>
+    <abbr data-title={title}>
       <IconComponent {...otherProps} />
     </abbr>
   );

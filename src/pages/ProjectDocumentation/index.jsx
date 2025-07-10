@@ -1,19 +1,23 @@
 import styles from "./ProjectDocumentation.module.scss";
 
 import { Link, useParams } from "react-router-dom";
-import projects from "../../store/Projects";
 import PageNotFound from "../PageNotFound";
-import { useState } from "react";
 import TechIcon from "../../components/TechIcon";
 import Button from "../../components/Button";
+import { useSelector } from "react-redux";
 
 const ProjectDocumentation = () => {
   const { id } = useParams();
-  const [currentProject] = useState(
-    projects.find((project) => project.summary.id === id)
-  );
+  
+  const { projects, currentProject } = useSelector(state => {
+    const projects = state.projects
+    const currentProject = state.projects.find(project => project.summary.id === id)
 
-  console.log(currentProject.summary.thumb)
+    return {
+      projects,
+      currentProject
+    }
+  })
 
   if (!projects.some((project) => project.summary.id === id))
     return <PageNotFound />;

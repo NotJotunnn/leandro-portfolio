@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./Tools.module.scss";
 
 const Tools = () => {
-  // TODO move it to a redux store
   const [ tools ] = useState([
     "HTML",
     "CSS",

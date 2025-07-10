@@ -4,7 +4,7 @@ import styles from "./About.module.scss";
 
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section id="About" className={styles.about}>
       <div className={styles.aboutWrapper}>
         <div className={styles.col1}>
           <div className={styles.imageBackground}>

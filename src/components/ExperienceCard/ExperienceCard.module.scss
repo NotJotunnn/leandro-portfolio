@@ -1,0 +1,67 @@
+@use "../../styles/defaultValues";
+
+.card {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 70px;
+
+  position: relative;
+
+  &:nth-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: calc(50% - 17px);
+    right: calc(50% - 17px);
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 5px solid defaultValues.$accent;
+  }
+
+  & .col1,
+  & .col2 {
+    width: 30%;
+  }
+
+  & .col1 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    text-align: right;
+
+    & h5 {
+      font-size: 24px;
+    }
+
+    & h6 {
+      font-size: 16px;
+      font-weight: 600;
+
+      color: defaultValues.$accent;
+    }
+  }
+
+  &:nth-of-type(odd) .col1 {
+    text-align: left;
+  }
+
+  & .col2 {
+    background-color: defaultValues.$background2;
+    color: black;
+
+    padding: 15px;
+    border-radius: 4px;
+  }
+}
