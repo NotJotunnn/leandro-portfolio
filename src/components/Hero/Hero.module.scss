@@ -10,6 +10,8 @@
 
   width: 100%;
 
+  padding-block: 10px;
+
   background-image: url("/assets/ilya-pavlov-unsplash-hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +21,10 @@
   overflow: hidden;
 
   position: relative;
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 .heroBackground {
@@ -48,7 +54,69 @@
 
   gap: 35px;
 
-  & .col1, & .col2 {
+  position: relative;
+
+  & .backgroundChecker {
+    display: flex;
+
+    justify-content: right;
+    align-items: center;
+
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+
+    width: 30px;
+    height: 30px;
+
+    font-size: 15px;
+
+    background-color: black;
+    outline: 2px solid defaultValues.$accent;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    transition: width 200ms ease-in 200ms, border-radius 200ms ease-in 250ms;
+
+    & p:first-child {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      translate: -50% -50%;
+
+      color: aliceblue;
+
+      transition: translate 200ms ease-in 250ms;
+    }
+
+    & p:last-child {
+      white-space: nowrap;
+
+      padding-right: 30px;
+
+      color: rgba(240, 248, 255, 0.5);
+    }
+
+    &:hover {
+      width: 200px;
+
+      padding: 0 0 0 10px;
+
+      border-radius: 4px;
+
+      transition: width 200ms ease-in 200ms, border-radius 200ms ease-in;
+
+      & p:first-child {
+        translate: 0 -100px;
+        transition: translate 200ms ease-in;
+      }
+    }
+  }
+
+  & .col1,
+  & .col2 {
     display: flex;
     flex-direction: column;
 
@@ -92,9 +160,10 @@
 
     font-size: 54px;
 
-    text-shadow: 2px 0px 1px defaultValues.$accent, 0px 2px 1px defaultValues.$accent, 
-    -2px 0px 1px defaultValues.$accent, 0px -2px 1px defaultValues.$accent,
-    2px 2px 1px defaultValues.$accent, -2px -2px 1px defaultValues.$accent, 
-    2px -2px 1px defaultValues.$accent, -2px 2px 1px defaultValues.$accent;
+    text-shadow: 2px 0px 1px defaultValues.$accent,
+      0px 2px 1px defaultValues.$accent, -2px 0px 1px defaultValues.$accent,
+      0px -2px 1px defaultValues.$accent, 2px 2px 1px defaultValues.$accent,
+      -2px -2px 1px defaultValues.$accent, 2px -2px 1px defaultValues.$accent,
+      -2px 2px 1px defaultValues.$accent;
   }
 }

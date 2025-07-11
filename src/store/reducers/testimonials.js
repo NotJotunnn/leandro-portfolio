@@ -11,49 +11,47 @@ const initialState = {
       {
         user: "local",
         message: "Eai? Oque achou de trabalhar comigo?",
-        sent: "",
+        sent: "22:21",
       },
       {
         user: "local",
         message: "A parte de desenvolver em massa pelo menos.",
-        sent: "",
+        sent: "22:21",
       },
       {
         user: "network",
         message: "Baum demais.",
-        sent: "",
+        sent: "22:31",
       },
       {
         user: "network",
         message: "Fez o Front que eu não curto.",
-        sent: "",
+        sent: "22:31",
       },
       {
         user: "network",
         message: "Principalmente isso.",
-        sent: "",
+        sent: "22:31",
       },
       {
         user: "network",
         message: "Lidou bem com os problemas.",
-        sent: "",
+        sent: "22:31",
       },
       {
         user: "network",
         message: "Agora bem nas adversidades.",
+        sent: "22:31",
       },
       {
         user: "network",
         message: "E tá disposto a melhorar conforme os problemas.",
-      },
-      {
-        user: "local",
-        message: "Muito obrigado manin.",
+        sent: "22:32",
       },
       {
         user: "download",
         message:
-          "<a download href='assets/experiences/lokinhoskins/devTestimonial.jpeg'><img src='assets/experiences/lokinhoskins/devTestimonial.jpeg' alt='Imagem do depoimento do cliente' /></a> Conversa alterada do feedback original! Caso queira ver o feedback original basta acessar clicar na imagem acima",
+          "<a download rel='canonical' target='_blank' aria-label='Veja esse depoimento por completo!' href='assets/experiences/lokinhoskins/devTestimonial.jpeg'><img src='assets/experiences/lokinhoskins/devTestimonial.jpeg' alt='Imagem do depoimento do cliente' /></a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback completo basta acessar clicando na imagem acima",
       },
     ],
   },
@@ -105,14 +103,9 @@ const initialState = {
           sent: "22:32",
         },
         {
-          user: "local",
-          message: "Muito obrigado manin.",
-          sent: "22:32",
-        },
-        {
           user: "download",
           message:
-          "<a download href='assets/experiences/lokinhoskins/devTestimonial.jpeg'><img src='assets/experiences/lokinhoskins/devTestimonial.jpeg' alt='Imagem do depoimento do cliente' /></a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback completo basta acessar clicando na imagem acima",
+            "<a download rel='canonical' target='_blank' aria-label='Veja esse depoimento por completo!' href='assets/experiences/lokinhoskins/devTestimonial.jpeg'><img src='assets/experiences/lokinhoskins/devTestimonial.jpeg' alt='Imagem do depoimento do cliente' /></a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback completo basta acessar clicando na imagem acima",
         },
       ],
     },
@@ -152,7 +145,7 @@ const initialState = {
         {
           user: "download",
           message:
-            '<a download href="assets/experiences/lokinhoskins/clientTestimonial.jpeg" > <img src="assets/experiences/lokinhoskins/clientTestimonial.jpeg" alt="Imagem do depoimento do cliente" /> </a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback original basta acessar clicando na imagem acima',
+            '<a download rel="canonical" target="_blank" aria-label="Veja esse depoimento por completo!" href="assets/experiences/lokinhoskins/clientTestimonial.jpeg" > <img src="assets/experiences/lokinhoskins/clientTestimonial.jpeg" alt="Imagem do depoimento do cliente" /> </a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback original basta acessar clicando na imagem acima',
         },
       ],
     },

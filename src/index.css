@@ -7,6 +7,8 @@
   box-sizing: border-box;
 
   font-family: "Roboto", sans-serif;
+  
+  font-smooth: always;
 }
 
 html {
@@ -78,4 +80,69 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+}
+
+.salute {
+  display: flex;
+
+  align-items: center;
+
+  height: fit-content;
+
+  gap: 5px;
+}
+
+.salute.hidden .emoji {
+  width: fit-content;
+
+  font-size: 24px;
+
+  transform: translateX(0px);
+
+  opacity: 1;
+}
+
+.salute.animate .emoji {
+  animation: salute 1s ease-in-out 1.5s 2;
+}
+
+.salute h3 {
+  font-size: 24px;
+}
+
+.hidden {
+  transform: translateX(-500px);
+
+  opacity: 0;
+}
+
+.animate {
+  animation: slideInLeft 1s ease 100ms both;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-500px);
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes salute {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(70deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }

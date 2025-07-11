@@ -12,7 +12,21 @@
   width: 100%;
   height: 100%;
 
-  background-color: defaultValues.$background3;
+  background: linear-gradient(
+      to top,
+      rgba(defaultValues.$background, 0) 0%,
+      defaultValues.$background 50%
+    ),
+    radial-gradient(
+        ellipse farthest-corner at 160px 160px,
+        #9058e5,
+        #482c72 50%,
+        defaultValues.$background 50%
+      )
+      defaultValues.$background;
+
+  background-size: 100% 100%, 160px 160px;
+  background-repeat: no-repeat, repeat;
 
   & .pageWrapper {
     display: flex;
@@ -43,7 +57,7 @@
       min-height: 800px;
       max-height: 800px;
 
-      // border: 2px solid red;
+      outline: 10px solid defaultValues.$background2;
       border-radius: 20px;
 
       overflow: hidden;
@@ -58,5 +72,62 @@
 
       position: relative;
     }
+  }
+}
+
+.onboardingHand {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+
+  width: 80px;
+  height: 80px;
+
+  color: white;
+
+  stroke: black;
+  stroke-width: 30px;
+
+  translate: -20% 20px;
+
+  filter: drop-shadow(2px 2px 2px black);
+
+  overflow: visible;
+
+  z-index: 3;
+
+  animation: interactable 3s ease-in infinite;
+
+  transition: opacity 200ms ease-in-out;
+
+  pointer-events: none;
+
+  .cellphone:hover &,
+  &.invisible {
+    opacity: 0;
+
+    animation-play-state: paused;
+  }
+}
+
+@keyframes interactable {
+  0% {
+    translate: -20% 20px;
+  }
+  50% {
+    translate: -50% 0px;
+    rotate: 0deg;
+  }
+  55% {
+    translate: calc(-50% - 3px) 0px;
+  }
+  60% {
+    translate: -50% 0px;
+  }
+  80% {
+    translate: -50% 0px;
+  }
+  100% {
+    translate: -20% 20px;
   }
 }

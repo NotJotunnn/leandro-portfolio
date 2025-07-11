@@ -1,7 +1,6 @@
-import { BiLogoTypescript } from "react-icons/bi";
-import { FaDocker, FaFigma, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaDocker, FaFigma, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
 import { RiExternalLinkLine, RiGithubLine, RiNextjsFill } from "react-icons/ri";
-import { SiAxios, SiExpress, SiPostgresql, SiPrisma } from "react-icons/si";
+import { SiAxios, SiExpress, SiJest, SiJsonwebtokens, SiKnexdotjs, SiPostgresql, SiPrisma, SiReactrouter, SiRedux, SiTypescript, SiVite } from "react-icons/si";
 
 const TechIcon = ({ name, hasLink, ...otherProps }) => {
   const title = hasLink ? `${name} (link)` : name;
@@ -11,13 +10,20 @@ const TechIcon = ({ name, hasLink, ...otherProps }) => {
     react: FaReact,
     nextjs: RiNextjsFill,
     github: RiGithubLine,
-    typescript: BiLogoTypescript,
+    typescript: SiTypescript,
     axios: SiAxios,
     express: SiExpress,
     prisma: SiPrisma,
     postgres: SiPostgresql,
     docker: FaDocker,
     external: RiExternalLinkLine,
+    reactRouter: SiReactrouter,
+    vite: SiVite,
+    redux: SiRedux,
+    sass: FaSass,
+    knex: SiKnexdotjs,
+    jest: SiJest,
+    jwt: SiJsonwebtokens,
   };
 
   const IconComponent = iconsArray[name];

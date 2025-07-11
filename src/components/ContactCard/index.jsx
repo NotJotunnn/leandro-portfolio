@@ -44,7 +44,7 @@ const ContactCard = ({ name }) => {
         </p>
       </div>
 
-      <div className={styles.lastMessaged}>{date.getDate()}/{date.getMonth() + 1}/{date.getFullYear()}</div>
+      <div className={styles.lastMessaged}>{date.getDate()}/{date.getMonth() + 1}/{date.getFullYear().toString()[2]}{date.getFullYear().toString()[3]}</div>
     </div>
   );
 };

@@ -12,7 +12,14 @@ const StudyCard = ({ index }) => {
         <h5>{study.title}</h5>
         <p>Descrição: {study.description}</p>
       </div>
-      <Link target="_blank" to={study.url}><RiExternalLinkLine /></Link>
+      <Link
+        target="_blank"
+        to={study.url}
+        aria-label="Ir para repositório"
+        rel="external"
+      >
+        <RiExternalLinkLine />
+      </Link>
     </div>
   );
 };

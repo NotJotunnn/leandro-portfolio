@@ -24,7 +24,7 @@
 
       filter: grayscale(100%);
 
-      transition: filter 200ms ease-in;
+      transition: filter 200ms ease-in 400ms, scale 400ms ease-in;
     }
 
     &::after {
@@ -41,7 +41,7 @@
 
       opacity: 0.3;
 
-      transition: opacity 200ms ease-in;
+      transition: opacity 200ms ease-in 200ms;
 
       pointer-events: none;
     }
@@ -50,10 +50,13 @@
   & .col1:hover {
     & img {
       filter: grayscale(0);
+      scale: 1.05;
+      transition: filter 200ms ease-in, scale 400ms ease-in 200ms;
     }
 
     &::after {
       opacity: 0;
+      transition: opacity 200ms ease-in;
     }
   }
 

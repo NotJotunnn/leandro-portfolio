@@ -1,0 +1,93 @@
+@use "../../styles/defaultValues";
+
+footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  padding-block: 50px;
+
+  background-color: defaultValues.$accent;
+
+  & .contactWrapper {
+    --area: 25px;
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    & h2 {
+      color: aliceblue;
+
+      line-height: 32px;
+
+      text-align: center;
+    }
+
+    & p {
+      font-size: 18px;
+
+      cursor: pointer;
+
+      &:hover a,
+      &:focus-within a,
+      &:hover svg,
+      &:focus-within svg {
+        color: black;
+      }
+
+      & a {
+        display: flex;
+
+        align-items: center;
+
+        gap: 5px;
+
+        color: aliceblue;
+        text-decoration: none;
+      }
+
+      & svg {
+        width: var(--area);
+        height: var(--area);
+      }
+    }
+
+    & .socials {
+      display: flex;
+
+      justify-content: space-around;
+      align-items: center;
+
+      & button {
+        display: flex;
+
+        align-items: center;
+
+        width: var(--area);
+        height: var(--area);
+
+        background-color: transparent;
+        border: none;
+
+        cursor: pointer;
+
+        &:hover svg,
+        &:focus-within svg {
+          color: black;
+        }
+
+        & svg {
+          width: 100%;
+          height: 100%;
+
+          color: aliceblue;
+        }
+      }
+    }
+  }
+}

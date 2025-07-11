@@ -8,16 +8,18 @@ import { useSelector } from "react-redux";
 
 const ProjectDocumentation = () => {
   const { id } = useParams();
-  
-  const { projects, currentProject } = useSelector(state => {
-    const projects = state.projects
-    const currentProject = state.projects.find(project => project.summary.id === id)
+
+  const { projects, currentProject } = useSelector((state) => {
+    const projects = state.projects;
+    const currentProject = state.projects.find(
+      (project) => project.summary.id === id
+    );
 
     return {
       projects,
-      currentProject
-    }
-  })
+      currentProject,
+    };
+  });
 
   if (!projects.some((project) => project.summary.id === id))
     return <PageNotFound />;
@@ -34,22 +36,21 @@ const ProjectDocumentation = () => {
               <th scope="col">
                 Cliente <br /> (Social)
               </th>
-              <th scope="col">
-                Stack
-              </th>
-              <th scope="col">
-                Status do Github
-              </th>
-              <th scope="col">
-                Trabalho
-              </th>
+              <th scope="col">Stack</th>
+              <th scope="col">Status do Github</th>
+              <th scope="col">Trabalho</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">
                 {currentProject?.page?.client ? (
-                  <Link target="_blank" to={currentProject.page.clientSocial}>
+                  <Link
+                    target="_blank"
+                    to={currentProject.page.clientSocial}
+                    aria-label="Ir para rede social do cliente"
+                    rel="external"
+                  >
                     {currentProject.page.client}
                   </Link>
                 ) : (
@@ -98,25 +99,31 @@ const ProjectDocumentation = () => {
                 {currentProject?.summary?.links?.github && (
                   <Link
                     target="_blank"
+                    aria-label="Ir para repositório"
+                    rel="external"
                     to={currentProject?.summary?.links?.github}
                   >
-                    <TechIcon name={"github"} />
+                    <TechIcon hasLink={true} name={"github"} />
                   </Link>
                 )}
                 {currentProject?.summary?.links?.figma && (
                   <Link
                     target="_blank"
+                    aria-label="Ir para arquivo Figma"
+                    rel="external"
                     to={currentProject?.summary?.links?.figma}
                   >
-                    <TechIcon name={"figma"} />
+                    <TechIcon hasLink={true} name={"figma"} />
                   </Link>
                 )}
                 {currentProject?.summary?.links?.external && (
                   <Link
                     target="_blank"
+                    aria-label="Ir para site"
+                    rel="external"
                     to={currentProject?.summary?.links?.external}
                   >
-                    <TechIcon name={"external"} />
+                    <TechIcon hasLink={true} name={"external"} />
                   </Link>
                 )}
               </td>
@@ -142,7 +149,9 @@ const ProjectDocumentation = () => {
           className={styles.content}
           dangerouslySetInnerHTML={{ __html: currentProject.page.content }}
         ></div>
-        <Link to={"/"}><Button darkMode={true}>Voltar para Home</Button></Link>
+        <Link to={"/"} aria-label="Ir para Home">
+          <Button darkMode={true}>Voltar para Home</Button>
+        </Link>
       </div>
     </div>
   );

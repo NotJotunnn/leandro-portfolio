@@ -3,8 +3,7 @@ import styles from "./Tools.module.scss";
 
 const Tools = () => {
   const [ tools ] = useState([
-    "HTML",
-    "CSS",
+    "HTML/CSS",
     "Javascript",
     "ReactJS",
     "NextJS",
@@ -14,12 +13,16 @@ const Tools = () => {
     "UI/UX",
     "Figma",
     "Git/Github",
-    "VSCode",
+    "Redux Toolkit",
+    "Vite",
+    "Sass",
+    "React Router",
+    "Styled Components"
   ])
 
   return (
     <div className={styles.tools}>
-      {tools?.map((tool, index) => <button disabled key={index + tool}>{tool}</button>)}
+      {tools?.map((tool, index) => <button className="hidden" disabled key={index + tool}>{tool}</button>)}
     </div>
   );
 };

@@ -83,11 +83,11 @@ header {
     transition: width 400ms ease-in;
   }
 
-  & a.active, & a:hover, & a:focus-within {
+  & a:active, & a:hover, & a:focus-within {
     color: defaultValues.$accent;
   }
 
-  & a.active::after, & a:hover::after, & a:focus-within::after {
+  & a:active::after, & a:hover::after, & a:focus-within::after {
     width: 100%;
   }
 }

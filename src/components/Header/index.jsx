@@ -1,87 +1,80 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { NavHashLink } from "react-router-hash-link";
+
 const Header = () => {
   return (
     <header>
       <div className={styles.headerWrapper}>
-        <NavHashLink
-          scroll={(el) => {
-            const yCoordinate =
-              el.getBoundingClientRect().top + window.pageYOffset;
-            const yOffset = -70;
-            window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+        <Link
+          to={{
+            pathname: "/",
+            hash: "#Home",
           }}
-          to={"/#Home"}
-          activeClassName={styles.active}
+          aria-label="Ir para Hero"
         >
           <img src="/assets/Logo.svg" />
-        </NavHashLink>
+        </Link>
         <nav className={styles.navigation}>
           <ul>
             <li>
-              <NavHashLink
-                scroll={(el) => {
-                  const yCoordinate =
-                    el.getBoundingClientRect().top + window.pageYOffset;
-                  const yOffset = -70;
-                  window.scrollTo({
-                    top: yCoordinate + yOffset,
-                    behavior: "smooth",
-                  });
+              <Link
+                to={{
+                  pathname: "/",
+                  hash: "#About",
                 }}
-                to={"/#About"}
-                activeClassName={styles.active}
+                aria-label="Ir para Sobre mim"
               >
                 Sobre mim
-              </NavHashLink>
+              </Link>
             </li>
             <li>
-              <NavHashLink
-                scroll={(el) => {
-                  const yCoordinate =
-                    el.getBoundingClientRect().top + window.pageYOffset;
-                  const yOffset = -70;
-                  window.scrollTo({
-                    top: yCoordinate + yOffset,
-                    behavior: "smooth",
-                  });
+              <Link
+                to={{
+                  pathname: "/",
+                  hash: "#Project",
                 }}
-                to={"/#Project"}
-                activeClassName={styles.active}
+                aria-label="Ir para Projetos"
               >
                 Projetos
-              </NavHashLink>
+              </Link>
             </li>
             <li>
-              <NavHashLink
-                scroll={(el) => {
-                  const yCoordinate =
-                    el.getBoundingClientRect().top + window.pageYOffset;
-                  const yOffset = -70;
-                  window.scrollTo({
-                    top: yCoordinate + yOffset,
-                    behavior: "smooth",
-                  });
+              <Link
+                to={{
+                  pathname: "/",
+                  hash: "#Contact",
                 }}
-                to={"/#Contact"}
-                activeClassName={styles.active}
+                aria-label="Ir para contato"
               >
                 Contato
-              </NavHashLink>
+              </Link>
             </li>
           </ul>
           <ul className={styles.socials}>
             <li>
-              <button>
-                <FaLinkedinIn />
-              </button>
+              <Link
+                to="https://www.linkedin.com/in/leandro-ferreira-l1/"
+                aria-label="Entre em contato pelo Linkedin"
+                rel="external"
+                target="_blank"
+              >
+                <button>
+                  <FaLinkedinIn />
+                </button>
+              </Link>
             </li>
             <li>
-              <button>
-                <FaGithub />
-              </button>
+              <Link
+                to="https://github.com/NotJotunnn"
+                aria-label="Entre em contato pelo Github"
+                rel="external"
+                target="_blank"
+              >
+                <button>
+                  <FaGithub />
+                </button>
+              </Link>
             </li>
           </ul>
         </nav>

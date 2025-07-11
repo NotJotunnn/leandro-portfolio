@@ -16,15 +16,15 @@ const About = () => {
 
           <hr />
 
-          <div className={styles.salute}>
-            <h3 className={styles.emoji}>👋</h3>
+          <div className="salute hidden">
+            <h3 className="emoji">👋</h3>
             <h3>Olá! Me chamo Leandro!</h3>
           </div>
 
           <p>
             Desde meu <span className="highlight">ensino médio</span>, sempre
             tive muita conexão com a área de programação, e o desejo de
-            explora-la melhor e hoje eu estou o tornando{" "}
+            explorá-la melhor e hoje eu estou o tornando{" "}
             <span className="highlight">realidade</span>.
           </p>
 
