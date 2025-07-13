@@ -1,4 +1,5 @@
 @use "../../styles/defaultValues";
+@use "../../styles/breakpoints";
 
 .experiencePage {
   display: flex;
@@ -13,8 +14,6 @@
   height: 100%;
 
   background-color: defaultValues.$background;
-
-  overscroll-behavior-y: contain;
 
   position: relative;
 
@@ -82,6 +81,39 @@
         overflow: visible;
 
         background-color: defaultValues.$accent;
+      }
+    }
+  }
+}
+
+#mobile {
+  display: none;
+}
+
+@media (max-width: breakpoints.$mobile-sm) {
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .experiencePage {
+    min-width: 90vw;
+    width: 90vw;
+
+    overflow-x: hidden;
+
+    & .pageWrapper {
+      min-width: 90vw;
+      width: 90vw;
+
+      & .cardGroup {
+        width: 90vw;
+
+        padding-inline: 10px;
+        padding-bottom: 60px;
       }
     }
   }

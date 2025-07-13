@@ -1,4 +1,5 @@
 @use "../../styles/defaultValues";
+@use "../../styles/breakpoints";
 
 .about {
   display: flex;
@@ -177,5 +178,79 @@
     object-fit: cover;
 
     translate: 10px 10px;
+  }
+}
+
+#mobile {
+  display: none;
+}
+
+@media (max-width: breakpoints.$mobile-sm) {
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  .aboutWrapper {
+    gap: 0;
+
+    width: 100vw;
+
+    &::after,
+    &::before {
+      background: radial-gradient(
+            circle,
+            transparent 20%,
+            #1c1c1c 20%,
+            #1c1c1c 80%,
+            transparent 80%,
+            transparent
+          )
+          0% 0% / 50px 50px,
+        radial-gradient(
+            circle,
+            transparent 20%,
+            #1c1c1c 20%,
+            #1c1c1c 80%,
+            transparent 80%,
+            transparent
+          )
+          25px 25px / 50px 50px,
+        linear-gradient(#51237e 2px, transparent 2px) 0px -1px / 25px 25px,
+        linear-gradient(90deg, #51237e 2px, #1c1c1c 2px) -1px 0px / 25px 25px #1c1c1c;
+      background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+      background-color: #1c1c1c;
+    }
+
+    & .col2 {
+      text-align: center;
+
+      padding-inline: 10px;
+
+      & img {
+        width: 200px;
+        height: 200px;
+
+        align-self: center;
+
+        object-fit: cover;
+        object-position: top;
+
+        border-radius: 50%;
+        border: 2px solid transparent;
+        outline: 4px solid defaultValues.$accent;
+      }
+
+      & hr {
+        align-self: center;
+      }
+
+      div:has(h3) {
+        justify-content: center;
+      }
+    }
   }
 }

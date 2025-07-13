@@ -1,4 +1,5 @@
 import styles from "./StudyPage.module.scss";
+
 import StudyCard from "../StudyCard";
 import { useSelector } from "react-redux";
 

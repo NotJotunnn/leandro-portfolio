@@ -1,21 +1,40 @@
-import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
+
+import { Link, useNavigate } from "react-router-dom";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { MdOutlineMenu } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleSidebar } from "../../store/reducers/sidebar";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const sidebarInvisible = useSelector((state) => state.sidebar);
+
+  const handleClick = () => {
+    if (!(window.innerWidth > 600)) dispatch(toggleSidebar());
+  };
+
+  const handleNavigateClick = (headHome) => {
+    if (headHome)
+      navigate({
+        pathname: "/",
+        hash: "#Home",
+      });
+
+    if (!(sidebarInvisible) && !(window.innerWidth > 600))
+      dispatch(toggleSidebar());
+  };
+
   return (
-    <header>
+    <header
+      className={
+        sidebarInvisible ? `${styles.sidebarInvisible} sidebarInvisible` : ""
+      }
+    >
       <div className={styles.headerWrapper}>
-        <Link
-          to={{
-            pathname: "/",
-            hash: "#Home",
-          }}
-          aria-label="Ir para Hero"
-        >
-          <img src="/assets/Logo.svg" />
-        </Link>
-        <nav className={styles.navigation}>
+        <img onClick={() => handleNavigateClick(true)} src="/assets/Logo.svg" />
+        <nav className={styles.navigation} id={styles.desktop}>
           <ul>
             <li>
               <Link
@@ -78,6 +97,10 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+
+        <button onClick={handleClick} id={styles.mobile}>
+          <MdOutlineMenu />
+        </button>
       </div>
     </header>
   );

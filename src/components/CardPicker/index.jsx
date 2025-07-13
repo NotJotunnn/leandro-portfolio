@@ -1,5 +1,6 @@
-import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import styles from "./CardPicker.module.scss";
+
+import { IoCheckmarkDoneSharp } from "react-icons/io5";
 
 const CardPicker = ({ name, children, time }) => {
   if (name === "network")

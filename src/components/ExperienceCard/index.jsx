@@ -1,5 +1,6 @@
-import { useSelector } from "react-redux";
 import styles from "./ExperienceCard.module.scss";
+
+import { useSelector } from "react-redux";
 import { FaFileDownload } from "react-icons/fa";
 
 const ExperienceCard = ({ index }) => {

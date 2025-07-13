@@ -1,4 +1,5 @@
 @use "../../styles/defaultValues";
+@use "../../styles/breakpoints";
 
 .card {
   display: flex;
@@ -71,7 +72,7 @@
     & ul {
       display: flex;
       flex-direction: column;
-      
+
       gap: 5px;
 
       margin-top: 20px;
@@ -81,11 +82,65 @@
         text-align: left;
 
         font-size: 14px;
-        
+
         & a {
           color: defaultValues.$accent;
         }
       }
+    }
+  }
+}
+
+#mobile {
+  display: none;
+}
+
+@media (max-width: breakpoints.$mobile-sm) {
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .card {
+    flex-direction: column;
+
+    padding-top: 20px;
+
+    gap: 0;
+
+    &::after {
+      z-index: 0;
+
+      top: 0;
+    }
+
+    & .col1,
+    & .col2 {
+      width: 100%;
+
+      z-index: 1;
+
+      text-align: left;
+
+      background-color: defaultValues.$background2;
+    }
+
+    & .col1 {
+      border-radius: 10px 10px 0 0;
+      padding: 15px;
+
+      color: black;
+      gap: 5px;
+    }
+    & .col2 {
+      border-radius: 0 0 10px 10px;
+    }
+
+    &:nth-of-type(odd) {
+      flex-direction: column;
     }
   }
 }

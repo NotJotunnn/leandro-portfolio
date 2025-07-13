@@ -1,6 +1,6 @@
-import CertificateCard from "../CertificateCard";
 import styles from "./CertificatePage.module.scss";
 
+import CertificateCard from "../CertificateCard";
 import { useSelector } from "react-redux";
 
 const CertificatePage = () => {

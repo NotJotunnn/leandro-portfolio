@@ -1,6 +1,8 @@
-import Segment from "../Segment";
 import styles from "./Experiences.module.scss";
+
+import Segment from "../Segment";
 import PageContainer from "../PageContainer";
+import MobileSegment from "../MobileSegment";
 
 const Experiences = () => {
   return (
@@ -13,6 +15,7 @@ const Experiences = () => {
         <Segment />
 
         <PageContainer />
+        <MobileSegment />
       </div>
     </section>
   );

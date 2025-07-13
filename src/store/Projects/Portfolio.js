@@ -11,17 +11,16 @@ const summary = {
   thumb: "/assets/projects/Portfolio/thumb.png",
   tech: ["reactRouter", "vite", "redux", "sass"],
 };
-
+// TODO finish documenting your own project
 const page = {
-  duration: 1,
+  duration: 2,
   durationMetric: "Semana",
   startDate: "Fevereiro, 2024",
   endDate: "Fevereiro, 2024",
   githubRepoStatus: "Indisponível (Por enquanto!)",
   jobs: ["Designer", "Desenvolvedor Frontend"],
-  client: "Churrascos Ferreira",
-  clientSocial:
-    "https://www.instagram.com/churrascosferreiradf?igsh=bDhyeW5xY2FuOHlw&utm_source=qr",
+  client: "Eu",
+  clientSocial: "",
   content: `
   <h2>O resumo</h2>
 

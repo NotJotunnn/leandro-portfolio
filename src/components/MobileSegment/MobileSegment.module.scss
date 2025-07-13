@@ -1,0 +1,150 @@
+@use "../../styles/defaultValues";
+@use "../../styles/breakpoints";
+
+.onboardingHand {
+  position: absolute;
+  top: 20px;
+  right: 0;
+
+  width: 80px;
+  height: 80px;
+
+  color: white;
+
+  stroke: black;
+  stroke-width: 30px;
+
+  translate: -20% 20px;
+
+  filter: drop-shadow(2px 2px 2px black);
+
+  overflow: visible;
+
+  z-index: 1;
+
+  animation: interactable 5s ease-in infinite;
+
+  transition: opacity 200ms ease-in-out;
+
+  pointer-events: none;
+
+
+  &.invisible {
+    opacity: 0;
+
+    transition: opacity 200ms ease-in-out;
+
+    animation-play-state: paused;
+  }
+}
+
+@keyframes interactable {
+  0% {
+    translate: -155% 0px;
+  }
+  15% {
+    translate: -155% 0px;
+    rotate: 0deg;
+  }
+  30% {
+    translate: -155% 0px;
+  }
+  35% {
+    translate: -155% 0px;
+    rotate: -8deg;
+  }
+  40% {
+    translate: -155% 0px;
+    rotate: 0deg;
+  }
+  45% {
+    translate: -95% 0px;
+  }
+  50% {
+    translate: -95% 0px;
+    rotate: -8deg;
+  }
+  55% {
+    translate: -95% 0px;
+    rotate: 0deg;
+  }
+  60% {
+    translate: -35% 0px;
+  }
+  65% {
+    translate: -35% 0px;
+    rotate: -8deg;
+  }
+  70% {
+    translate: -35% 0px;
+    rotate: 0deg;
+  }
+  75% {
+    translate: 25% 0px;
+  }
+  80% {
+    translate: 25% 0px;
+    rotate: -8deg;
+  }
+  85% {
+    translate: 25% 0px;
+  }
+  90% {
+    translate: 25% 0px;
+  }
+  100% {
+    translate: -155% 0px;
+  }
+}
+
+#mobile {
+  display: none;
+}
+
+@media (max-width: breakpoints.$mobile-sm) {
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #mobile.mobileSegment {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+
+    width: 60vw;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    background-color: #853ad076;
+    backdrop-filter: blur(5px);
+
+    position: absolute;
+    bottom: 30px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+    & .node {
+      width: 40px;
+      height: 40px;
+
+      background-color: #dddddd50;
+      border-radius: 50%;
+
+      transition: background-color 200ms ease-in-out;
+
+      &.active {
+        background-color: #dddddde0;
+        filter: invert(100%);
+      }
+    }
+  }
+}

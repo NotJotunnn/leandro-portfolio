@@ -1,5 +1,6 @@
-import { useSelector } from "react-redux";
 import styles from "./CertificateCard.module.scss";
+
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const CertificateCard = ({ index }) => {

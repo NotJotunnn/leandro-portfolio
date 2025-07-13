@@ -7,12 +7,18 @@
   box-sizing: border-box;
 
   font-family: "Roboto", sans-serif;
-  
+
   font-smooth: always;
 }
 
 html {
   scroll-behavior: smooth;
+
+  overflow-x: hidden;
+}
+
+html:has(header.sidebarInvisible) {
+  overflow-y: hidden;
 }
 
 abbr {
@@ -144,5 +150,33 @@ h6 {
 
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .hidden {
+    transform: translateX(0);
+
+    opacity: 0;
+  }
+
+  /* ! DEBUGGING
+  .animate {
+    animation: none;
+  } */
+
+  .buttonGroup {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttonGroup a {
+    width: 100%;
+  }
+
+  .buttonGroup button {
+    width: 100%;
   }
 }

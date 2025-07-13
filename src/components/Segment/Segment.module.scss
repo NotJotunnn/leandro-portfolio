@@ -1,50 +1,79 @@
 @use "../../styles/defaultValues";
+@use "../../styles/breakpoints";
 
 .buttonGroup {
-    display: flex;
+  display: flex;
 
-    margin-top: 15px;
+  margin-top: 15px;
 
+  border-radius: 4px;
+
+  background-color: defaultValues.$background3;
+
+  box-shadow: inset 0px 0px 10px black;
+
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+
+    width: 200px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    translate: calc(var(--position) * 200px);
+
+    background-color: defaultValues.$accent;
     border-radius: 4px;
 
-    box-shadow: inset 2px 2px 5px black;
+    transition: translate 400ms ease-in-out;
 
-    background-color: defaultValues.$background3;
+    z-index: 1;
+  }
 
-    position: relative;
-    overflow: hidden;
+  & button {
+    width: 200px;
+    padding: 10px;
 
+    background-color: transparent;
+    border: none;
+
+    color: aliceblue;
+
+    cursor: pointer;
+
+    z-index: 2;
+  }
+}
+
+#mobile {
+  display: none;
+}
+
+
+@media (max-width: 860px) {
+  .buttonGroup {
     &::after {
-      content: "";
-
-      width: 200px;
-      height: 100%;
-
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      translate: calc(var(--position) * 200px);
-
-      background-color: defaultValues.$accent;
-      border-radius: 4px;
-
-      transition: translate 400ms ease-in-out;
-
-      z-index: 1;
+      width: 20vw;
+      translate: calc(var(--position) * 20vw);
     }
 
     & button {
-      width: 200px;
-      padding: 10px;
-
-      background-color: transparent;
-      border: none;
-
-      color: aliceblue;
-
-      cursor: pointer;
-
-      z-index: 2;
+      width: 20vw;
     }
   }
+}
+
+@media (max-width: breakpoints.$mobile-sm) {
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+}

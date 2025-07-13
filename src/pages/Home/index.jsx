@@ -6,9 +6,8 @@ import Projects from "../../components/Projects";
 import runObserver from "../../utils/HiddenElementsObserver";
 
 const Home = () => {
-  // TODO add consistent padding block to every section
   useEffect(() => {
-    runObserver()
+    runObserver();
   }, []);
 
   return (

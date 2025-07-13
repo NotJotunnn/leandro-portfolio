@@ -8,7 +8,7 @@ const Hero = () => {
       <div className={styles.heroBackground}></div>
       <div className={styles.heroWrapper}>
         <Link to="https://unsplash.com/photos/monitor-showing-java-programming-OqtafYT5kTw" rel="external" target="_blank">
-          <div className={styles.backgroundChecker}>
+          <div className={styles.backgroundChecker} id={styles.desktop}>
             <p>?</p>
             <p>Imagem por Ilya Pavlov</p>
           </div>
@@ -23,8 +23,8 @@ const Hero = () => {
             <a rel="canonical" aria-label="Veja mais sobre meu currículo" download href={"assets/Leandro-Ferreira-250627.pdf"}><Button>Baixar currículo</Button></a>
           </div>
         </div>
-        <div className={styles.col2}>
-          <img src="/assets/graduacao2.jpeg" />
+        <div className={styles.col2} id={styles.desktop}>
+          <img src="/assets/graduacao2.jpeg" alt="Foto minha" />
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 @use "../../styles/defaultValues";
+@use "../../styles/breakpoints";
 
 .experiences {
   display: flex;
@@ -21,6 +22,8 @@
 
   width: defaultValues.$width;
 
+  position: relative;
+
   gap: 35px;
 
   & h2 {
@@ -31,5 +34,30 @@
     font-size: 24px;
 
     font-weight: 500;
+  }
+}
+
+#mobile {
+  display: none;
+}
+
+@media (max-width: breakpoints.$mobile-sm) {
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .experiencesWrapper {
+    & h2 {
+      font-size: 32px;
+    }
+
+    & h3 {
+      padding-inline: 40px;
+      text-align: center;
+    }
   }
 }

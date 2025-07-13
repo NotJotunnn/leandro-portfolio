@@ -7,11 +7,13 @@ const About = () => {
     <section id="About" className={styles.about}>
       <div className={styles.aboutWrapper}>
         <div className={styles.col1}>
-          <div className={styles.imageBackground}>
+          <div className={styles.imageBackground} id={styles.desktop}>
             <img src="/assets/graduacao3.jpeg" alt="" />
           </div>
         </div>
         <div className={styles.col2}>
+          <img src="/assets/graduacao2.jpeg" alt="Foto minha" className="hidden" id={styles.mobile} />
+
           <h2>Sobre mim</h2>
 
           <hr />

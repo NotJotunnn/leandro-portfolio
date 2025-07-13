@@ -1,4 +1,5 @@
 @use "../../styles/defaultValues";
+@use "../../styles/breakpoints";
 
 .testimonialsPage {
   display: flex;
@@ -98,13 +99,15 @@
 
   animation: interactable 3s ease-in infinite;
 
-  transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out 2s;
 
   pointer-events: none;
 
   .cellphone:hover &,
   &.invisible {
     opacity: 0;
+
+    transition: opacity 200ms ease-in-out;
 
     animation-play-state: paused;
   }
@@ -119,15 +122,77 @@
     rotate: 0deg;
   }
   55% {
-    translate: calc(-50% - 3px) 0px;
+    translate: -50% 0px;
+    rotate: -4deg;
   }
   60% {
     translate: -50% 0px;
+    rotate: 0deg;
   }
   80% {
     translate: -50% 0px;
   }
   100% {
     translate: -20% 20px;
+  }
+}
+
+@media (max-width: breakpoints.$mobile-sm) {
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .testimonialsPage {
+    min-width: 90vw;
+    width: 90vw;
+
+    overflow-x: hidden;
+
+    background: linear-gradient(
+        to top,
+        rgba(defaultValues.$background, 0) 0%,
+        defaultValues.$background 50%
+      ),
+      radial-gradient(
+          ellipse farthest-corner at 5px 5px,
+          #9058e5,
+          #482c72 50%,
+          defaultValues.$background 50%
+        )
+        defaultValues.$background;
+    background-size: 100% 100%, 5px 5px;
+    background-repeat: no-repeat, repeat;
+
+    & .pageWrapper {
+      min-width: 90vw;
+      width: 90vw;
+
+      overflow: hidden;
+
+      & .cellphone {
+        width: 70vw;
+        min-height: 80vh;
+        max-height: 80vh;
+
+        outline: 10px solid defaultValues.$background2;
+        border-radius: 20px;
+
+        overflow: hidden;
+
+        padding-top: 40px;
+        padding-inline: 10px;
+
+        background-color: white;
+        color: black;
+
+        gap: 15px;
+
+        position: relative;
+      }
+    }
   }
 }

@@ -1,4 +1,5 @@
 @use "../../styles/defaultValues";
+@use "../../styles/breakpoints";
 
 .card {
   display: flex;
@@ -30,19 +31,39 @@
   }
 
   & p {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   & a svg {
     --area: 30px;
 
-    opacity: .5;
+    opacity: 0.5;
 
     width: var(--area);
     height: var(--area);
 
     &:hover {
       opacity: 1;
+    }
+  }
+}
+
+@media (max-width: breakpoints.$mobile-sm) {
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .card {
+    width: 90vw;
+
+    & p {
+      width: 240px;
+
+      white-space: pre-line;
     }
   }
 }

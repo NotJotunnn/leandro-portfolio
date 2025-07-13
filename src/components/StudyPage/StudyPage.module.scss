@@ -1,4 +1,5 @@
 @use "../../styles/defaultValues";
+@use "../../styles/breakpoints";
 
 .studyPage {
   display: flex;
@@ -52,5 +53,36 @@
   & a {
     text-decoration: none;
     color: aliceblue;
+  }
+}
+
+#mobile {
+  display: none;
+}
+
+@media (max-width: breakpoints.$mobile-sm) {
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .studyPage {
+    min-width: 90vw;
+    width: 90vw;
+
+    overflow-x: hidden;
+
+    & .pageWrapper {
+      min-width: 90vw;
+      width: 90vw;
+
+      & .cardGroup {
+        padding-inline: 0;
+        padding-block: 0 60px;
+      }
+    }
   }
 }
