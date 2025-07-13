@@ -28,7 +28,7 @@ const ProjectDocumentation = () => {
     <div className={styles.projectDocumentation}>
       <div className={styles.projectDocumentationWrapper}>
         <div className={styles.thumbnail}>
-          <img src={currentProject.summary.thumb} alt="Thumbnail do projeto" />
+          <img loading="lazy" src={currentProject.summary.thumb} alt="Thumbnail do projeto" />
         </div>
         <table>
           <thead>

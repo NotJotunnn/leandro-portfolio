@@ -185,7 +185,7 @@
   display: none;
 }
 
-@media (max-width: breakpoints.$mobile-sm) {
+@media (max-width: breakpoints.$tablet) {
   #desktop {
     display: none;
   }
@@ -223,6 +223,10 @@
         linear-gradient(90deg, #51237e 2px, #1c1c1c 2px) -1px 0px / 25px 25px #1c1c1c;
       background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
       background-color: #1c1c1c;
+    }
+
+    & .aboutButtonGroup {
+      justify-content: center;
     }
 
     & .col2 {

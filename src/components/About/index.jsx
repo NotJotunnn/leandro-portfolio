@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Button from "../Button";
 import Tools from "../Tools";
 import styles from "./About.module.scss";
@@ -8,11 +9,11 @@ const About = () => {
       <div className={styles.aboutWrapper}>
         <div className={styles.col1}>
           <div className={styles.imageBackground} id={styles.desktop}>
-            <img src="/assets/graduacao3.jpeg" alt="" />
+            <img loading="lazy" src="/assets/graduacao3.png" alt="" />
           </div>
         </div>
         <div className={styles.col2}>
-          <img src="/assets/graduacao2.jpeg" alt="Foto minha" className="hidden" id={styles.mobile} />
+          <img loading="lazy" src="/assets/graduacao2.png" alt="Foto minha" className="hidden" id={styles.mobile} />
 
           <h2>Sobre mim</h2>
 
@@ -49,7 +50,7 @@ const About = () => {
             (rsrsrs)
           </p>
 
-          <div className="buttonGroup">
+          <div className={classNames("buttonGroup", styles.aboutButtonGroup)}>
             <a aria-label="Entre em contato" rel="canonical" href="#contact">
               <Button>Entrar em contato</Button>
             </a>

@@ -58,13 +58,13 @@ const page = {
 
   <p>Sendo assim, abri meu navegador e comecei à busca por sites referências envolvidos no mesmo contexto da minha empresa cliente.</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/References.png" alt="Referências usadas na criação do site" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/References.png" alt="Referências usadas na criação do site" />
 
   <p>Como pode ver, minhas referências variam bastante, desde elementos visualmente interessantes, até sessões completas como *Footer* ou Galeria. Meu interesse nessa parte é justamente pegar tudo que atrai minha atenção, sem dar muita ideia para o que vai ou não terminar no design final.</p>
 
   <p>Após a longa caça por referências (e mais importante, a satisfação de tudo aquilo que preciso pra começar).</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/thumb.png" alt="Imagem da tela home" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/thumb.png" alt="Imagem da tela home" />
 
   <span>
     <div>
@@ -102,35 +102,35 @@ const page = {
 
   <p>Logo após vieram as cores. Agora eu me considero um homem simples, e acredito que meu design demonstra muito deste fator, logo, minha paleta de cores também não é muito complicada.</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Palette.png" alt="Imagem da paleta de cores" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/Palette.png" alt="Imagem da paleta de cores" />
 
   <p>Meu interesse nessas cores está muito ligado às cores providas da logo da empresa, incluindo algumas externas, adicionadas apenas para dar melhor destaque as cores escolhidas.</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Logos.png" alt="Imagem das logos vetorizadas" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/Logos.png" alt="Imagem das logos vetorizadas" />
 
   <p>Em termos de destaques do desenvolvimento, tivemos:</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Services.png" alt="Imagem da seção de serviços" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/Services.png" alt="Imagem da seção de serviços" />
 
   <p>Decidir ir por um design bastante amigável, uma imagem, pela qual o usuário pode passar o mouse por cima, para saber de qual cardápio se tratava!</p>
 
   <h3>Colagens</h3>
 
-  <img src="/assets/projects/ChurrascoFerreira/Colagens.png" alt="Imagem das colagens" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/Colagens.png" alt="Imagem das colagens" />
 
   <p>Feitas com o âmbito de melhor detalhar as sessões de história e serviços gerais. Escolhi as formas para melhor demonstrar as características principais da empresa, isto é, que é uma família, e oque ela serve.</p>
 
   <h3>Clientes</h3>
 
-  <img src="/assets/projects/ChurrascoFerreira/Testimonials.png" alt="Imagem da seção de depoimentos" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/Testimonials.png" alt="Imagem da seção de depoimentos" />
 
   <p>Para essa seção eu decidir ir um passo além, como pode ver, dentre as logos usadas, algumas não possuem um fundo colorido, logo eu facilitei a visualização, colocando um fundo branco. E como pode ver, também estilizei o fundo, para parecer uma ponte, com todas as empresas formando a estrutura!</p>
 
   <h2><span class="italic">Header</span> & <span class="italic">Footer</span></h2>
 
-  <img src="/assets/projects/ChurrascoFerreira/Header.png" alt="Imagem do Cabeçalho" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/Header.png" alt="Imagem do Cabeçalho" />
 
-  <img src="/assets/projects/ChurrascoFerreira/Footer.png" alt="Imagem do Footer" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/Footer.png" alt="Imagem do Footer" />
 
   <p>Esse foi um desafio interessante, eu queria algo que demonstrasse informação suficiente, sem transbordar ou passar dos limites, e por mais esperado que seja, é algo que possuo muito orgulho!</p>
 
@@ -138,13 +138,13 @@ const page = {
 
   <p>Seguindo um pouco os passos da sessão clientes, decidir não me segurar em uma das sessões mais importantes para o site!</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/ServicesDetailed.png" alt="Imagem da seção de serviços detalhada" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/ServicesDetailed.png" alt="Imagem da seção de serviços detalhada" />
 
   <p>O plano aqui é simples, fundo estático com animação leve, texto na frente com destaque no plano e uma descrição média para destacar o serviço, um botão CTA e um para obter ainda mais detalhes (do cardápio). Um outro detalhe interessante, está nas abas acima, de tempo em tempo, a aba passará para próxima, com uma animaçãozinha bem suave.</p>
 
   <h3>Cardápio</h3>
 
-  <img src="/assets/projects/ChurrascoFerreira/Menu.png" alt="Imagem do cardápio" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/Menu.png" alt="Imagem do cardápio" />
 
   <p>Já para o cardápio, eu fui com um tema mais simples e direto ao ponto, ele aparecerá como um popup, e possuirá uma imagem à esquerda, e os detalhes à direita, com o nome por cima, e com os itens abaixo.</p>
 
@@ -152,7 +152,7 @@ const page = {
 
   <p>E por fim, um ponto extremamente importante!</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Mobile.png" alt="Imagem dos wireframes para telas mobile" />
+  <img loading="lazy" src="/assets/projects/ChurrascoFerreira/Mobile.png" alt="Imagem dos wireframes para telas mobile" />
 
   <p>O design *mobile* completo, incluindo um Link Tree integrado ao site mesmo, mostrando horário de funcionamento, botões de redes, logo e um (possível) videozinho tocando lentamente no fundo, para não distrair muito.</p>
 

@@ -74,6 +74,8 @@ span.italic {
 .buttonGroup {
   display: flex;
 
+  flex-wrap: wrap;
+
   width: 100%;
 
   gap: 15px;
@@ -150,6 +152,14 @@ h6 {
 
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hidden {
+    transform: translateX(0);
+
+    opacity: 0;
   }
 }
 

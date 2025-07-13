@@ -11,9 +11,8 @@ const summary = {
   thumb: "/assets/projects/Portfolio/thumb.png",
   tech: ["reactRouter", "vite", "redux", "sass"],
 };
-// TODO finish documenting your own project
 const page = {
-  duration: 2,
+  duration: 1,
   durationMetric: "Semana",
   startDate: "Fevereiro, 2024",
   endDate: "Fevereiro, 2024",
@@ -28,135 +27,130 @@ const page = {
 
   <h2>O projeto</h2>
 
-  <p>Para aqueles que leram meu estudo de caso do projeto Lokinho Skins, este documento será levemente diferente, justamente por ter participado do início, levarei em consideração desde o início, os problemas pelas quais meu design tenta solucionar.</p>
-
-  <p>E como clarificação, este projeto é apenas um Design (por enquanto)!</p>
+  <p><span class="highlight">Redesign</span> completo do meu <span class="highlight">Portfólio</span> antigo! Feito para trazer mais em dia com o que <span class="highlight">produzo</span> (logo é de <span class="highlight">altíssima importância</span> o update!). Utilizei <span class="highlight">Vite</span>, <span class="highlight">Github Pages</span> para lidar com hosteamento, <span class="highlight">React Router</span> para lidar com a navegação, <span class="highlight">Redux</span> para os dados e <span class="highlight">React Icon</span> para lidar com os ícones que usei pelas páginas!</p>
 
   <h2>Problemas!</h2>
 
-  <p>Entrando em contato com a empresa Churrascos Ferreira, ofereci a oportunidade de desenvolver um site para melhorar sua presença online, sendo uma empresa muito dependente na aquisição passiva de clientes pelos posts que fazem, e por referências de possíveis clientes pelas quais fazem o serviço.</p>
+  <p>Após um tempo trabalhando na área, um dos elementos de contato mais importantes meu (meu portfólio), estava desatualizado. Não apenas isso como muito do que aprendi e ganhei, não eram demonstrados!</p>
 
-  <p>Eu me considero sortudo por já saber de muito disso, justamente por ter um passado trabalhando como garçon, e ja estar envolvido no cenário desde cedo.</p>
+  <p>Isso e acredito que para um mundo tech, onde nem todos empregadores são desenvolvedores, não é muito justo esperar que todos saibam usar Github!</p>
 
   <h2>Soluções</h2>
 
+  <p>Considerando esses pontos, foi ai que uma nova versão do portfólio surgiu!</p>
+
+  <p>E meu plano não pudia ser mais claro... Revitalizar um projeto que já havia me servido há tempo!</p>
+
   <div>
-    <p>Considerando o texto passado, os pontos que mais queria tratar durante o desenvolvimento desse site, serão os seguintes:</p>
+    <p>Para os que se interessam nos detalhes, o plano real foi o seguinte:</p>
     <ul>
-      <li>Criar um design simples e fácil</li>
-      <li>Criar um design mais *chamativo*, dando ênfase na identidade virtual da empresa</li>
-      <li>Utilizar os famosos botões "Call to action" para melhor vender os serviços para os visitantes do site</li>
-      <li>Utilizar de sessões adicionais de "Serviços" e "Galeria" para melhor demonstrar a experiência por trás da empresa</li>
-      <li>Criar um *LinkTree* de canais pela qual visitantes poderam acessar para conhecer mais do trabalho</li>
-      <li>Adaptar tudo para *mobile*</li>
+      <li>1. Fazer um redesign de seções dos Projetos e Experiências para melhor demonstrar os aprendizado</li>
+      <li>2. Desconectar o único caminho dos projetos do Github e trazer para o site em si</li>
+      <li>3. Modernizar ainda mais o design, aplicando um pouco mais de figuras interessantes para talvez atrair melhor a atenção do usuário para seções importantes</li>
     </ul>
   </div>
 
-  <p>Meu interesse à essa etapa, é utilizar de sites já inseridos nesse contexto como referência, somando meus conhecimentos na criação de sites modernos, para casar um visual mais amistoso.</p>
+  <p>E começando forte, decidi por utilizar o stack de React + Vite. Por ser um projeto relativamente simples, não acreditava (e ainda não acredito) que precisava de algo muito poderoso como NextJS.</p>
 
-  <p>Sendo assim, abri meu navegador e comecei à busca por sites referências envolvidos no mesmo contexto da minha empresa cliente.</p>
+  <p>elementos como Header e Hero não precisavam de muita atenção, acredito que já supriam o que eu necessitava.</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/References.png" alt="Referências usadas na criação do site" />
+  <img loading="lazy" src="/assets/projects/Portfolio/thumb.png" alt="Thumbnail do projeto" />
 
-  <p>Como pode ver, minhas referências variam bastante, desde elementos visualmente interessantes, até sessões completas como *Footer* ou Galeria. Meu interesse nessa parte é justamente pegar tudo que atrai minha atenção, sem dar muita ideia para o que vai ou não terminar no design final.</p>
+  <p>Olhos aguçados porém notaram um elemento novo no Hero!</p>
 
-  <p>Após a longa caça por referências (e mais importante, a satisfação de tudo aquilo que preciso pra começar).</p>
+  <img loading="lazy" src="/assets/projects/Portfolio/artistreferenceimage.png" alt="Link de referência a imagem de fundo" />
 
-  <img src="/assets/projects/ChurrascoFerreira/thumb.png" alt="Imagem da tela home" />
+  <p>Esse simbolosinho é uma das partes mais importantes para o revisionamento do site, os princípios! Eu sou uma pessoa que acredita fielmente na ajuda mútua em um ambiente de desenvolvimento. Logo, optei por deixar mais claro de onde a imagem de fundo se origina!</p>
 
-  <span>
-    <div>
-      <h3>Informação</h3>
-      <p>Infelizmente não fui capaz de voltar atrás o suficiente para ter acesso aos Wireframes, porém eles não fogem muito de como ficou o projeto final!</p>
-    </div>
-  </span>
+  <img loading="lazy" src="/assets/projects/Portfolio/artistreference.gif" alt="Gif do link de referência a imagem de fundo sendo utilizado" />
+  
+  <p>Sim, é um link para o unsplash do artista!</p>
+  
+  <p>Próximo na linha era a seção "Sobre mim". Agora eu não sou uma pessoa de muitas palavras (irônico eu sei), mas eu ainda sim gostaria que intrevistadores ou empregadores passassem um tempo maior nessa sessão, justamente para terem um contexto maior do quem eu sou.</p>
 
-  <p>Começo lento, com um wireframe simples, focando apenas em como o olho do visitante irá navegar pelo site. Logo penso em uma estrutura simples:</p>
+  <img loading="lazy" src="/assets/projects/Portfolio/sobremim.png" alt="Imagem de referência da seção 'sobre mim'" />
+  
+  <p>Para isso utilizei de emojis, ilustrações simples, e animações para melhor demonstrar as tecnologias que uso, acredito também que as linhas não ficaram muito largas e com altura entre linhas boa para uma leitura rasa, deixando-a mais balanceada e direta ao ponto.</p>
+  
+  <p>Utilizei de botões para separar as tecnologias que sou familiarizado para realmente colocar em destaque que cada uma leva um espaço em minha cabeça.</p>
+  
+  <p>Por último, um CTA básico para lembrar o porque de estarem no site!</p>
+  
+  <p>Próximo na linha temos meu primeiro re-design em destaque, e um dos meus favoritos ainda por cima!</p>
 
-  <p>Header --> Hero --> Serviços principais --> CTA (Call to action) --> História --> Serviços gerais (mais detalhes) --> Clientes antigos --> CTA --> Footer</p>
+  <img loading="lazy" src="/assets/projects/Portfolio/projetos.png" alt="Imagem de referência da seção 'projetos'" />
+  
+  <p>E já que esse re-design significa MUITO para mim, acredito que é justo compararmos com o que ele visa substituir!</p>
 
-  <p>Não planejei isso tudo de uma só vez, porém foi o que trabalhei na etapa de Wireframe da página *Home*.</p>
+  <img loading="lazy" src="/assets/projects/Portfolio/projeto(antigo).png" alt="Imagem de referência da seção 'projetos' antiga" />
 
-  <div>
-    <p>Para as outras páginas tivemos o seguinte:</p>
-    <ul>
-      <li>Sobre Nós</li>
-          <ul>
-          <li>Página utilizada para focar na apresentação da empresa em si</li>
-          <li>Header --> Hero --> História --> Serviços gerais --> Footer</li>
-        </ul>
-      <li>Galeria</li>
-          <ul>
-          <li>Página utilizada para demonstrar fotos sobre a empresa e seus serviços</li>
-          <li>Header --> Hero -->  Galeria --> CTA (instagram) --> CTA --> Footer</li>
-        </ul>
-      <li>Serviços</li>
-          <ul>
-          <li>Página utilizada para trabalhar um pouco mais os visitantes no funil de vendas</li>
-          <li>Header --> Hero --> Serviços principais (maior detalhes, incluindo cardápio) --> Perguntas frequentes --> CTA --> Footer</li>
-        </ul>
-    </ul>
-  </div>
+  <p>(Ignorem os projetos antigo não relacionados ao desenvolvimento Frontend! Estou trabalhando em novos projetos que mais cedo ou mais tarde aparecerão no site!)</p>
 
-  <p>Logo após vieram as cores. Agora eu me considero um homem simples, e acredito que meu design demonstra muito deste fator, logo, minha paleta de cores também não é muito complicada.</p>
+  <p>Como podem ver, o design mudou absurdamente! Passou de um simples clique para acessar o Github, para algo realmente com mais detalhes, e que você nem ao menos precisa sair do site para saber mais sobre!</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Palette.png" alt="Imagem da paleta de cores" />
+  <p>Tech Stack usada? visível desde o início, links externos para os interessados em ve *ver* o projeto em seu funcionamento ou o design do mesmo? Logo ao lado do botão de ler mais.</p>
 
-  <p>Meu interesse nessas cores está muito ligado às cores providas da logo da empresa, incluindo algumas externas, adicionadas apenas para dar melhor destaque as cores escolhidas.</p>
+  <p>Além do meu trabalho em específico e descrição breve que acredito já estarem familiarizados no UI.</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Logos.png" alt="Imagem das logos vetorizadas" />
+  <p>Espero que tenham sentido minha paixão pela tela porque eu estou me segurando aqui pra não derramar lágrimas por quão bom que terminou.</p>
 
-  <p>Em termos de destaques do desenvolvimento, tivemos:</p>
+  <p>Próximo tivemos um outro re-design magnífico! Dessa vez da seção de Experiências!</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Services.png" alt="Imagem da seção de serviços" />
+  <img loading="lazy" src="/assets/projects/Portfolio/conhecimentos.png" alt="Imagem de referência da seção 'conhecimento'" />
 
-  <p>Decidir ir por um design bastante amigável, uma imagem, pela qual o usuário pode passar o mouse por cima, para saber de qual cardápio se tratava!</p>
+  E como podem ver, eu mantive o design antigo! 😂
 
-  <h3>Colagens</h3>
+  <p>Brincadeiras à parte, acredito que todos estão familiarizados com o Seguimento de botões acima do "Grande retângulo misterioso! 👻". Como já podem ter notado <span class="italic">também</span>, agora há novas 3 seções, todos bem auto explicativos e com um ar individual!</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Colagens.png" alt="Imagem das colagens" />
+  <img loading="lazy" src="/assets/projects/Portfolio/depoimentos.png" alt="Imagem de referência da seção 'conhecimento' no segmento de Depoimentos" />
 
-  <p>Feitas com o âmbito de melhor detalhar as sessões de história e serviços gerais. Escolhi as formas para melhor demonstrar as características principais da empresa, isto é, que é uma família, e oque ela serve.</p>
+  <p>Já na segunda seção interna do container, temos uma visão diferente! Um celular com Whatsapp aberto! Minha intenção para essa seção já deve estar bastante clara, mas já que ambos meus depoimentos de projetos foram feitos pelo Whats, nada mais justo que trazer essa experiência para o site.</p>
 
-  <h3>Clientes</h3>
+  <p>Um outro elemento interessante, tem que ser esse cursor estranho, e ja digo, ele foi feito para aqueles que tem um pouco mais de dificuldade em diferenciar um elemento interagível de um que é puramente ilustrativo!</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Testimonials.png" alt="Imagem da seção de depoimentos" />
+  <img loading="lazy" src="/assets/projects/Portfolio/cursormovement.gif" alt="Gif de referência da seção 'conhecimento' no segmento de Depoimentos com um cursor guia" />
 
-  <p>Para essa seção eu decidir ir um passo além, como pode ver, dentre as logos usadas, algumas não possuem um fundo colorido, logo eu facilitei a visualização, colocando um fundo branco. E como pode ver, também estilizei o fundo, para parecer uma ponte, com todas as empresas formando a estrutura!</p>
+  <p>Como pode ver ele é um elemento crucial na luta pela claridade! Não é perfeito, nada é, porém em meus testes limitados, ele se demonstrou bastante útil!</p>
 
-  <h2><span class="italic">Header</span> & <span class="italic">Footer</span></h2>
+  <p>As outras telas não são tão interessantes quanto essa, mas no meu ver elas não precisam ser. É como nas embalagens de alimentos, temos o que o produto é estampado com uma ilustração divertida, e todas as informações necessárias temos escondido em uma tabela que nem todo mundo lê (infelizmente).</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Header.png" alt="Imagem do Cabeçalho" />
+  <p>Clicando na tela, temos a próxima rolando para vista (Sim é necessário mostrar a animação!).</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/Footer.png" alt="Imagem do Footer" />
+  <img loading="lazy" src="/assets/projects/Portfolio/cellphoneanimation.gif" alt="Gif de referência da animação na seção 'conhecimento' no segmento de Depoimentos" />
 
-  <p>Esse foi um desafio interessante, eu queria algo que demonstrasse informação suficiente, sem transbordar ou passar dos limites, e por mais esperado que seja, é algo que possuo muito orgulho!</p>
+  <p>Alguns testes depois e temos um mock da tela do Whatsapp feita por completo!</p>
 
-  <h3>Serviços principais (Detalhado)</h3>
+  <img loading="lazy" src="/assets/projects/Portfolio/mockwhatsappfuncional.png" alt="Demonstração de como a tela do mock iterativo ficou" />
 
-  <p>Seguindo um pouco os passos da sessão clientes, decidir não me segurar em uma das sessões mais importantes para o site!</p>
+  <p>Agora é claro, não vou colocar o feedback completo em uma tela, para as pessoas que so querem ver o breve, isso normalmente é tudo que precisam, porém para os mais céticos, tenho uma imagem de fácil acesso que podem abrir no celular próprio para verem o feedback do jeito que foi enviado!</p>
 
-  <img src="/assets/projects/ChurrascoFerreira/ServicesDetailed.png" alt="Imagem da seção de serviços detalhada" />
+  <img loading="lazy" src="/assets/projects/Portfolio/downloaddofeedbackoriginal.png" alt="Demonstração da mensagem de download" />
 
-  <p>O plano aqui é simples, fundo estático com animação leve, texto na frente com destaque no plano e uma descrição média para destacar o serviço, um botão CTA e um para obter ainda mais detalhes (do cardápio). Um outro detalhe interessante, está nas abas acima, de tempo em tempo, a aba passará para próxima, com uma animaçãozinha bem suave.</p>
+  <p>Agora indo mais nos detalhes sobre a documentação presente no site!</p>
 
-  <h3>Cardápio</h3>
+  <img loading="lazy" src="/assets/projects/Portfolio/thumbdoc.png" alt="Imagem da thumbnail da página de documentação do projeto Lokinho Skins" />
 
-  <img src="/assets/projects/ChurrascoFerreira/Menu.png" alt="Imagem do cardápio" />
+  <p>Escrita por mim mesmo, nela possuímos todas as curiosidades, dificuldades (que eu pude lembrar 😅) que tive no projeto, e como já deve ter notado lendo este documento, também variam bastante nas descrições.</p>
 
-  <p>Já para o cardápio, eu fui com um tema mais simples e direto ao ponto, ele aparecerá como um popup, e possuirá uma imagem à esquerda, e os detalhes à direita, com o nome por cima, e com os itens abaixo.</p>
+  <p>Eu gosto de deixar bastante claro tudo que fiz em um projeto (e isso é demonstrado claramente pela tabela logo abaixo da thumb do projeto!).</p>
 
-  <h3><span class="italic">Mobile</span></h3>
+  <p>Indo para a última volta agora, temos a versão mobile de tudo que foi apresentado. Meu interesse na versão mobile estava mais em mostrar tudo que foi feito, apenas mais direto ao ponto (pessoal fã de mobile definitivamente não tem uma atenção muito grande).</p>
 
-  <p>E por fim, um ponto extremamente importante!</p>
+  <img loading="lazy" src="/assets/projects/Portfolio/cardmobile.png" alt="Imagem do card de um projeto com responsividade" />
 
-  <img src="/assets/projects/ChurrascoFerreira/Mobile.png" alt="Imagem dos wireframes para telas mobile" />
+  <p>Cards simples.</p>
 
-  <p>O design *mobile* completo, incluindo um Link Tree integrado ao site mesmo, mostrando horário de funcionamento, botões de redes, logo e um (possível) videozinho tocando lentamente no fundo, para não distrair muito.</p>
+  <img loading="lazy" src="/assets/projects/Portfolio/experienciasmobile.png" alt="Imagem da seção de 'conhecimentos' no segmento 'experiências' com responsividade" />
 
+  <img loading="lazy" src="/assets/projects/Portfolio/cursorhelpersegment.gif" alt="Gif demonstrando o botão de segmentos responsivo" />
+
+  <p>Barra de segmento mobile (contando com seu próprio cursor!).</p>
+
+  <p>E é isso, os demais elementos não tiveram uma transição muito complicada para mobile!</p>
+  
   <h2>Palavras Finais</h2>
 
-  <p>Por fim, sou grato pela oportunidade concedida pelo pessoal do <a target="_blank" href="https://www.instagram.com/churrascosferreiradf?igsh=bDhyeW5xY2FuOHlw&utm_source=qr">Churrascos Ferreira</a>, este projeto foi uma oportunidade única, e trabalhar perto me permitiu <span class="italic">insights</span> sobre a área que eu não teria em uma outra ocasião. Espero fielmente que algum dia coloquemos esse site no ar, e que seja eu na produção (kk)!</p>
+  <p>Por fim, esse projeto foi de longa vinda, tenho que admitir que estava procrastinando esse tempo todo, mas estou muito feliz que terminou do jeito que terminou. É visualmente tudo que eu tinha em mente (será que já posso me considerar um artista 🤔) e acredito que ainda vai surpreender muitas pessoas interessadas no que faço la fora!</p>
   `,
 };
 

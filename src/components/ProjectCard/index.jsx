@@ -5,9 +5,21 @@ import { useSelector } from "react-redux";
 
 const ProjectCard = (props) => {
   const { id } = props;
-  const { summary, page } = useSelector((state) =>
-    state.projects.find((project) => project.summary.id === id)
-  );
+  const { summary, page, tech } = useSelector((state) => {
+    const project = state.projects.find((project) => project.summary.id === id);
+
+    let tech;
+
+    if ([...project.summary.tech].length > 10)
+      tech = [...project.summary.tech].splice(0, 9);
+    else tech = [...project.summary.tech].splice(0, 10);
+
+    return {
+      summary: project.summary,
+      page: project.page,
+      tech,
+    };
+  });
 
   return (
     <div className={`${styles.projectCard} hidden`}>
@@ -22,7 +34,7 @@ const ProjectCard = (props) => {
           aria-label="Ir para referência"
           rel="external"
         >
-          <img src={summary.thumb} alt={summary.name} />
+          <img loading="lazy" src={summary.thumb} alt={summary.name} />
         </Link>
       </div>
       <div className={styles.col2}>
@@ -34,11 +46,12 @@ const ProjectCard = (props) => {
           <p dangerouslySetInnerHTML={{ __html: summary.description }}></p>
 
           <ul className={styles.tools} id={styles.mobile}>
-            {summary.tech?.map((tool, index) => (
+            {tech?.map((tool, index) => (
               <li key={index}>
                 <TechIcon name={tool} />
               </li>
             ))}
+            {summary.tech.length > 10 && <li>+{summary.tech.length - 9}</li>}
           </ul>
 
           <div className={styles.sources}>
@@ -133,11 +146,12 @@ const ProjectCard = (props) => {
         </div>
 
         <ul className={styles.tools} id={styles.desktop}>
-          {summary.tech?.map((tool, index) => (
+          {tech?.map((tool, index) => (
             <li key={index}>
               <TechIcon name={tool} />
             </li>
           ))}
+          {summary.tech.length > 10 && <li>+{summary.tech.length - 9}</li>}
         </ul>
       </div>
     </div>

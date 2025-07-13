@@ -33,7 +33,7 @@ const ContactCard = ({ name }) => {
 
   return (
     <div onClick={() => handleOnClick()} className={styles.contact}>
-      <img src={profilePicture} alt={name} />
+      <img loading="lazy" src={profilePicture} alt={name} />
       <div className={styles.contactMetaData}>
         <h6>{name}</h6>
         <p>

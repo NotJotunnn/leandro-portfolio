@@ -51,7 +51,7 @@ const initialState = {
       {
         user: "download",
         message:
-          "<a download rel='canonical' target='_blank' aria-label='Veja esse depoimento por completo!' href='assets/experiences/lokinhoskins/devTestimonial.jpeg'><img src='assets/experiences/lokinhoskins/devTestimonial.jpeg' alt='Imagem do depoimento do cliente' /></a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback completo basta acessar clicando na imagem acima",
+          "<a download rel='canonical' target='_blank' aria-label='Veja esse depoimento por completo!' href='assets/experiences/lokinhoskins/devTestimonial.png'><img loading='lazy' src='assets/experiences/lokinhoskins/devTestimonial.png' alt='Imagem do depoimento do cliente' /></a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback completo basta acessar clicando na imagem acima",
       },
     ],
   },
@@ -105,13 +105,13 @@ const initialState = {
         {
           user: "download",
           message:
-            "<a download rel='canonical' target='_blank' aria-label='Veja esse depoimento por completo!' href='assets/experiences/lokinhoskins/devTestimonial.jpeg'><img src='assets/experiences/lokinhoskins/devTestimonial.jpeg' alt='Imagem do depoimento do cliente' /></a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback completo basta acessar clicando na imagem acima",
+            "<a download rel='canonical' target='_blank' aria-label='Veja esse depoimento por completo!' href='assets/experiences/lokinhoskins/devTestimonial.png'><img loading='lazy' src='assets/experiences/lokinhoskins/devTestimonial.png' alt='Imagem do depoimento do cliente' /></a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback completo basta acessar clicando na imagem acima",
         },
       ],
     },
     {
       name: "Evandro Vidal",
-      profilePicture: "assets/experiences/lokinhoskins/cliente.jpeg",
+      profilePicture: "assets/experiences/lokinhoskins/cliente.png",
       project: "Lokinho Skins",
       date: "14 October, 2024",
       convo: [
@@ -145,7 +145,7 @@ const initialState = {
         {
           user: "download",
           message:
-            '<a download rel="canonical" target="_blank" aria-label="Veja esse depoimento por completo!" href="assets/experiences/lokinhoskins/clientTestimonial.jpeg" > <img src="assets/experiences/lokinhoskins/clientTestimonial.jpeg" alt="Imagem do depoimento do cliente" /> </a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback original basta acessar clicando na imagem acima',
+            '<a download rel="canonical" target="_blank" aria-label="Veja esse depoimento por completo!" href="assets/experiences/lokinhoskins/clientTestimonial.png" > <img loading="lazy" src="assets/experiences/lokinhoskins/clientTestimonial.png" alt="Imagem do depoimento do cliente" /> </a> Conversa alterada para manter mais direto ao ponto! Caso queira ver o feedback original basta acessar clicando na imagem acima',
         },
       ],
     },

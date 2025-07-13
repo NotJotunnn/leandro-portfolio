@@ -20,8 +20,8 @@ const PageContainer = () => {
       >
         <ExperiencePage />
         <TestimonialPage />
-        <CertificatePage />
         <StudyPage />
+        <CertificatePage />
       </div>
     </div>
   );

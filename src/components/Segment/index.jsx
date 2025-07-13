@@ -25,8 +25,8 @@ const Segment = () => {
     >
       <button onClick={() => handleChangePosition(0)}>Experiências</button>
       <button onClick={() => handleChangePosition(1)}>Depoimentos</button>
-      <button onClick={() => handleChangePosition(2)}>Certificados</button>
-      <button onClick={() => handleChangePosition(3)}>Estudos</button>
+      <button onClick={() => handleChangePosition(2)}>Estudos</button>
+      <button onClick={() => handleChangePosition(3)}>Certificados</button>
     </div>
   );
 };

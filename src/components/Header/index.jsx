@@ -33,7 +33,7 @@ const Header = () => {
       }
     >
       <div className={styles.headerWrapper}>
-        <img onClick={() => handleNavigateClick(true)} src="/assets/Logo.svg" />
+        <img loading="lazy" onClick={() => handleNavigateClick(true)} src="/assets/Logo.svg" />
         <nav className={styles.navigation} id={styles.desktop}>
           <ul>
             <li>

@@ -1,6 +1,7 @@
+import styles from "./Hero.module.scss";
+
 import { Link } from "react-router-dom";
 import Button from "../Button";
-import styles from "./Hero.module.scss";
 
 const Hero = () => {
   return (
@@ -24,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.col2} id={styles.desktop}>
-          <img src="/assets/graduacao2.jpeg" alt="Foto minha" />
+          <img loading="lazy" src="/assets/graduacao2.png" alt="Foto minha" />
         </div>
       </div>
     </section>

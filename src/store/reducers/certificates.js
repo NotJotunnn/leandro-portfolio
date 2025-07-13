@@ -78,7 +78,7 @@ const initialState = [
       "SQLite",
       "Back-End Web Development",
     ],
-    thumb: "assets/experiences/certificates/nodejsimplementandotestesemumaapirest.jpeg",
+    thumb: "assets/experiences/certificates/nodejsimplementandotestesemumaapirest.png",
   },
   {
     title: "Nodejs: Autenticação, Passport e OAuth 2.0",
@@ -161,7 +161,7 @@ const initialState = [
       "REST APIs",
       "Node.js",
     ],
-    thumb: "assets/experiences/certificates/javascript algo.jpeg",
+    thumb: "assets/experiences/certificates/javascript algo.png",
   },
   {
     title: "Node.js: Testes unitários e de integração",
@@ -181,7 +181,7 @@ const initialState = [
       "Back-End Web Development",
     ],
     thumb:
-      "assets/experiences/certificates/Certificado de node integração de testes alura.jpeg",
+      "assets/experiences/certificates/Certificado de node integração de testes alura.png",
   },
   {
     title: "Graduação em Ciências da computação",
@@ -230,7 +230,7 @@ const initialState = [
       "Front-End Design",
       "HTML5",
     ],
-    thumb: "assets/experiences/certificates/freecodecampcertificate.jpeg",
+    thumb: "assets/experiences/certificates/freecodecampcertificate.png",
   },
   {
     title: "Especializar",
@@ -361,7 +361,7 @@ const initialState = [
       url: "https://cursos.alura.com.br/certificate/e1a92c12-75fe-45d1-94a1-66b35bf9e22e?lang",
     },
     skills: [],
-    thumb: "assets/experiences/certificates/Certificado de aprender a aprender alura.jpeg",
+    thumb: "assets/experiences/certificates/Certificado de aprender a aprender alura.png",
   },
   {
     title: "Campus Party",
@@ -383,7 +383,7 @@ const initialState = [
       url: "https://cursos.alura.com.br/certificate/5ac7d921-6d74-4742-a722-8a1f92ec12a1?lang",
     },
     skills: [],
-    thumb: "assets/experiences/certificates/fotografiafotografeusandoseucelular.jpeg",
+    thumb: "assets/experiences/certificates/fotografiafotografeusandoseucelular.png",
   },
 ];
 

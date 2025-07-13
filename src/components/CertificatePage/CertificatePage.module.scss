@@ -29,7 +29,10 @@
     width: 100%;
     height: auto;
 
+    overflow-x: hidden;
+
     height: fit-content;
+
     & h4 {
       font-size: 24px;
 
@@ -37,12 +40,16 @@
       margin-bottom: 35px;
 
       color: black;
-
-      // z-index: 1;
     }
 
     & a {
       text-decoration: none;
+    }
+
+    & .cardGroup {
+      width: 100%;
+
+      word-wrap: break-word;
     }
   }
 }

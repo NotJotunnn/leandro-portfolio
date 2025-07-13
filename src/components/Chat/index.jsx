@@ -48,7 +48,7 @@ const Chat = () => {
         <button onClick={() => handleOnClick()}>
           <FaArrowLeft />
         </button>
-        <img src={currentChat.profilePicture} alt={`Foto de perfil de ${currentChat.name}`} />
+        <img loading="lazy" src={currentChat.profilePicture} alt={`Foto de perfil de ${currentChat.name}`} />
 
         <h6>{currentChat.name}</h6>
 

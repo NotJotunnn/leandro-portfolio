@@ -10,7 +10,7 @@ const CertificateCard = ({ index }) => {
     <Link target="_blank" to={certificate.credential.url} rel="external">
       <div className={styles.card}>
         <div className={styles.col1}>
-          <img src={certificate.thumb} alt={certificate.title} />
+          <img loading="lazy" src={certificate.thumb} alt={certificate.title} />
         </div>
         <div className={styles.col2}>
           <h5>{certificate.title}</h5>
