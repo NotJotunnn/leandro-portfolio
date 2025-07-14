@@ -11,7 +11,7 @@ const initialState = [
     },
     skills: ["Redux toolkit", "Saga"],
     thumb:
-      "/assets/experiences/certificates/React utilizando a arquitetura Saga com Redux Saga.png",
+      "assets/experiences/certificates/React utilizando a arquitetura Saga com Redux Saga.png",
   },
   {
     title: "JavaScript: Programação Orientada a Objetos",

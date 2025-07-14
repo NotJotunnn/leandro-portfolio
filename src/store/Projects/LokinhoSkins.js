@@ -11,7 +11,7 @@ const summary = {
       "https://www.figma.com/design/feYuEQLDM3VR9mtq3xou60/LOKINHO-SKYNS--Copy-?node-id=0-1&t=Zda0RwHdae2P28NZ-1",
   },
   thumb:
-    "/assets/projects/LokinhoSkins/thumb.png",
+    "assets/projects/LokinhoSkins/thumb.png",
   tech: [
     "react",
     "nodejs",
@@ -56,7 +56,7 @@ const page = {
 
   <p>Mantendo o projeto bastante simples no fronte. Como o design já estava iniciado, cuidei apenas da integração do design no Figma para código, o arquivo do Figma que utilizei é o <a target="_blank" href="https://www.figma.com/design/LoUYiIoV0h6UeIcD3Hs7b8/LOKINHO-SKYNS?t=AIkIz06amtD0l7v1-1">seguinte</a> (avisando este não é o arquivo oficial!).</p>
 
-  <img loading="lazy" src="/assets/projects/LokinhoSkins/personalFigmaFile.png" alt="Arquivo Figma pessoal" />
+  <img loading="lazy" src="assets/projects/LokinhoSkins/personalFigmaFile.png" alt="Arquivo Figma pessoal" />
 
   <p>Como pode ver, eu brinquei um pouco desmontando o design para melhor saber onde no site verdadeiro cada elemento poderia ser implementado!</p>
 
@@ -64,13 +64,13 @@ const page = {
 
   <p>Durante essa exploração, eu fui pegando o ritmo, recriando o site de pouquinho em pouquinho, até eu voltar a pegar o jeito.</p>
 
-  <img loading="lazy" src="/assets/projects/LokinhoSkins/thumb.png" alt="Seção Hero do projeto" />
+  <img loading="lazy" src="assets/projects/LokinhoSkins/thumb.png" alt="Seção Hero do projeto" />
 
   <p>Após o aquecimento, passei de componentes por dia, para páginas, o que pra ser justo, já não haviam tantas restando.</p>
 
   <p>Chegando finalmente na página da roleta, esta eu tive de reiterar bastante, justamente pela lógica por trás da roleta não ser muito clara nas primeiras etapas, e vendo como foi, já imagino soluções mais amigáveis que levariam menos tempo para desenvolver.</p>
 
-  <img loading="lazy" src="/assets/projects/LokinhoSkins/roulette.png" alt="Seção Roleta do projeto" />
+  <img loading="lazy" src="assets/projects/LokinhoSkins/roulette.png" alt="Seção Roleta do projeto" />
 
   <div>
     <p>Porém um fator interessante de trabalhar tão próximo do back assim, foi que eu tive um certo contato com as tecnologias presentes nele, e como acabei ajudando bastante na integração de APIs externas como do Mercado Pago e Twitch, tive ainda mais contato com as seguintes tecnologias:</p>

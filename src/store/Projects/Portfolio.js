@@ -8,7 +8,7 @@ const summary = {
     external: "",
     figma: "",
   },
-  thumb: "/assets/projects/Portfolio/thumb.png",
+  thumb: "assets/projects/Portfolio/thumb.png",
   tech: ["reactRouter", "vite", "redux", "sass"],
 };
 const page = {
@@ -54,21 +54,21 @@ const page = {
 
   <p>elementos como Header e Hero não precisavam de muita atenção, acredito que já supriam o que eu necessitava.</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/thumb.png" alt="Thumbnail do projeto" />
+  <img loading="lazy" src="assets/projects/Portfolio/thumb.png" alt="Thumbnail do projeto" />
 
   <p>Olhos aguçados porém notaram um elemento novo no Hero!</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/artistreferenceimage.png" alt="Link de referência a imagem de fundo" />
+  <img loading="lazy" src="assets/projects/Portfolio/artistreferenceimage.png" alt="Link de referência a imagem de fundo" />
 
   <p>Esse simbolosinho é uma das partes mais importantes para o revisionamento do site, os princípios! Eu sou uma pessoa que acredita fielmente na ajuda mútua em um ambiente de desenvolvimento. Logo, optei por deixar mais claro de onde a imagem de fundo se origina!</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/artistreference.gif" alt="Gif do link de referência a imagem de fundo sendo utilizado" />
+  <img loading="lazy" src="assets/projects/Portfolio/artistreference.gif" alt="Gif do link de referência a imagem de fundo sendo utilizado" />
   
   <p>Sim, é um link para o unsplash do artista!</p>
   
   <p>Próximo na linha era a seção "Sobre mim". Agora eu não sou uma pessoa de muitas palavras (irônico eu sei), mas eu ainda sim gostaria que intrevistadores ou empregadores passassem um tempo maior nessa sessão, justamente para terem um contexto maior do quem eu sou.</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/sobremim.png" alt="Imagem de referência da seção 'sobre mim'" />
+  <img loading="lazy" src="assets/projects/Portfolio/sobremim.png" alt="Imagem de referência da seção 'sobre mim'" />
   
   <p>Para isso utilizei de emojis, ilustrações simples, e animações para melhor demonstrar as tecnologias que uso, acredito também que as linhas não ficaram muito largas e com altura entre linhas boa para uma leitura rasa, deixando-a mais balanceada e direta ao ponto.</p>
   
@@ -78,11 +78,11 @@ const page = {
   
   <p>Próximo na linha temos meu primeiro re-design em destaque, e um dos meus favoritos ainda por cima!</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/projetos.png" alt="Imagem de referência da seção 'projetos'" />
+  <img loading="lazy" src="assets/projects/Portfolio/projetos.png" alt="Imagem de referência da seção 'projetos'" />
   
   <p>E já que esse re-design significa MUITO para mim, acredito que é justo compararmos com o que ele visa substituir!</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/projeto(antigo).png" alt="Imagem de referência da seção 'projetos' antiga" />
+  <img loading="lazy" src="assets/projects/Portfolio/projeto(antigo).png" alt="Imagem de referência da seção 'projetos' antiga" />
 
   <p>(Ignorem os projetos antigo não relacionados ao desenvolvimento Frontend! Estou trabalhando em novos projetos que mais cedo ou mais tarde aparecerão no site!)</p>
 
@@ -96,19 +96,19 @@ const page = {
 
   <p>Próximo tivemos um outro re-design magnífico! Dessa vez da seção de Experiências!</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/conhecimentos.png" alt="Imagem de referência da seção 'conhecimento'" />
+  <img loading="lazy" src="assets/projects/Portfolio/conhecimentos.png" alt="Imagem de referência da seção 'conhecimento'" />
 
   E como podem ver, eu mantive o design antigo! 😂
 
   <p>Brincadeiras à parte, acredito que todos estão familiarizados com o Seguimento de botões acima do "Grande retângulo misterioso! 👻". Como já podem ter notado <span class="italic">também</span>, agora há novas 3 seções, todos bem auto explicativos e com um ar individual!</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/depoimentos.png" alt="Imagem de referência da seção 'conhecimento' no segmento de Depoimentos" />
+  <img loading="lazy" src="assets/projects/Portfolio/depoimentos.png" alt="Imagem de referência da seção 'conhecimento' no segmento de Depoimentos" />
 
   <p>Já na segunda seção interna do container, temos uma visão diferente! Um celular com Whatsapp aberto! Minha intenção para essa seção já deve estar bastante clara, mas já que ambos meus depoimentos de projetos foram feitos pelo Whats, nada mais justo que trazer essa experiência para o site.</p>
 
   <p>Um outro elemento interessante, tem que ser esse cursor estranho, e ja digo, ele foi feito para aqueles que tem um pouco mais de dificuldade em diferenciar um elemento interagível de um que é puramente ilustrativo!</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/cursormovement.gif" alt="Gif de referência da seção 'conhecimento' no segmento de Depoimentos com um cursor guia" />
+  <img loading="lazy" src="assets/projects/Portfolio/cursormovement.gif" alt="Gif de referência da seção 'conhecimento' no segmento de Depoimentos com um cursor guia" />
 
   <p>Como pode ver ele é um elemento crucial na luta pela claridade! Não é perfeito, nada é, porém em meus testes limitados, ele se demonstrou bastante útil!</p>
 
@@ -116,19 +116,19 @@ const page = {
 
   <p>Clicando na tela, temos a próxima rolando para vista (Sim é necessário mostrar a animação!).</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/cellphoneanimation.gif" alt="Gif de referência da animação na seção 'conhecimento' no segmento de Depoimentos" />
+  <img loading="lazy" src="assets/projects/Portfolio/cellphoneanimation.gif" alt="Gif de referência da animação na seção 'conhecimento' no segmento de Depoimentos" />
 
   <p>Alguns testes depois e temos um mock da tela do Whatsapp feita por completo!</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/mockwhatsappfuncional.png" alt="Demonstração de como a tela do mock iterativo ficou" />
+  <img loading="lazy" src="assets/projects/Portfolio/mockwhatsappfuncional.png" alt="Demonstração de como a tela do mock iterativo ficou" />
 
   <p>Agora é claro, não vou colocar o feedback completo em uma tela, para as pessoas que so querem ver o breve, isso normalmente é tudo que precisam, porém para os mais céticos, tenho uma imagem de fácil acesso que podem abrir no celular próprio para verem o feedback do jeito que foi enviado!</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/downloaddofeedbackoriginal.png" alt="Demonstração da mensagem de download" />
+  <img loading="lazy" src="assets/projects/Portfolio/downloaddofeedbackoriginal.png" alt="Demonstração da mensagem de download" />
 
   <p>Agora indo mais nos detalhes sobre a documentação presente no site!</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/thumbdoc.png" alt="Imagem da thumbnail da página de documentação do projeto Lokinho Skins" />
+  <img loading="lazy" src="assets/projects/Portfolio/thumbdoc.png" alt="Imagem da thumbnail da página de documentação do projeto Lokinho Skins" />
 
   <p>Escrita por mim mesmo, nela possuímos todas as curiosidades, dificuldades (que eu pude lembrar 😅) que tive no projeto, e como já deve ter notado lendo este documento, também variam bastante nas descrições.</p>
 
@@ -136,13 +136,13 @@ const page = {
 
   <p>Indo para a última volta agora, temos a versão mobile de tudo que foi apresentado. Meu interesse na versão mobile estava mais em mostrar tudo que foi feito, apenas mais direto ao ponto (pessoal fã de mobile definitivamente não tem uma atenção muito grande).</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/cardmobile.png" alt="Imagem do card de um projeto com responsividade" />
+  <img loading="lazy" src="assets/projects/Portfolio/cardmobile.png" alt="Imagem do card de um projeto com responsividade" />
 
   <p>Cards simples.</p>
 
-  <img loading="lazy" src="/assets/projects/Portfolio/experienciasmobile.png" alt="Imagem da seção de 'conhecimentos' no segmento 'experiências' com responsividade" />
+  <img loading="lazy" src="assets/projects/Portfolio/experienciasmobile.png" alt="Imagem da seção de 'conhecimentos' no segmento 'experiências' com responsividade" />
 
-  <img loading="lazy" src="/assets/projects/Portfolio/cursorhelpersegment.gif" alt="Gif demonstrando o botão de segmentos responsivo" />
+  <img loading="lazy" src="assets/projects/Portfolio/cursorhelpersegment.gif" alt="Gif demonstrando o botão de segmentos responsivo" />
 
   <p>Barra de segmento mobile (contando com seu próprio cursor!).</p>
 

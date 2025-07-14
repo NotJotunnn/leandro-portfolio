@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.col2} id={styles.desktop}>
-          <img loading="lazy" src="/assets/graduacao2.png" alt="Foto minha" />
+          <img loading="lazy" src="assets/graduacao2.png" alt="Foto minha" />
         </div>
       </div>
     </section>
