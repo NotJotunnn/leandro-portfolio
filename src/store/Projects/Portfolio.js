@@ -43,11 +43,11 @@ const page = {
 
   <div>
     <p>Para os que se interessam nos detalhes, o plano real foi o seguinte:</p>
-    <ul>
-      <li>1. Fazer um redesign de seções dos Projetos e Experiências para melhor demonstrar os aprendizado</li>
-      <li>2. Desconectar o único caminho dos projetos do Github e trazer para o site em si</li>
-      <li>3. Modernizar ainda mais o design, aplicando um pouco mais de figuras interessantes para talvez atrair melhor a atenção do usuário para seções importantes</li>
-    </ul>
+    <ol>
+      <li>Fazer um redesign de seções dos Projetos e Experiências para melhor demonstrar os aprendizado</li>
+      <li>Desconectar o único caminho dos projetos do Github e trazer para o site em si</li>
+      <li>Modernizar ainda mais o design, aplicando um pouco mais de figuras interessantes para talvez atrair melhor a atenção do usuário para seções importantes</li>
+    </ol>
   </div>
 
   <p>E começando forte, decidi por utilizar o stack de React + Vite. Por ser um projeto relativamente simples, não acreditava (e ainda não acredito) que precisava de algo muito poderoso como NextJS.</p>
