@@ -19,7 +19,7 @@ const Hero = () => {
             Olá! me chamo:<span className={styles.name}>Leandro Ferreira</span>E
             sou um Desenvolvedor Frontend!
           </h1>
-          <div className="buttonGroup hidden">
+          <div className="buttonGroup hidden" id={styles.buttonGroup}>
             <Link to={{hash: "#Contact"}}><Button>Entrar em contato</Button></Link>
             <a rel="canonical" aria-label="Veja mais sobre meu currículo" download href={"assets/Leandro-Ferreira-250627.pdf"}><Button>Baixar currículo</Button></a>
           </div>
