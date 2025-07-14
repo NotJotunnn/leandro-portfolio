@@ -17,11 +17,11 @@ const initialState = [
       'Sendo <span class="highlight">estagiário em TI</span>, trabalhei ao lado de <span class="highlight">servidores</span> e <span class="highlight">tercerizados</span> a fim de educar e ajudar usuários menos familiarizados com tecnologia e sistemas recém desenvolvidos.',
     filesLocation: [
       {
-        location: "assets/experiences/inep/Relatório de Atividades.pdf",
+        location: "assets/experiences/inep/RelatoriodeAtividades.pdf",
         name: "Relatório de Atividades.pdf",
       },
       {
-        location: "assets/experiences/inep/Relatório de Desempenho.pdf",
+        location: "assets/experiences/inep/RelatoriodeDesempenho.pdf",
         name: "Relatório de Desempenho.pdf",
       },
     ],
