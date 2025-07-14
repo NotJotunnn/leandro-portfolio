@@ -137,10 +137,15 @@
   }
 
   & img {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
     --area: 500px;
 
     width: var(--area);
-    height: var(--area);
+    aspect-ratio: 1/1;
 
     object-fit: cover;
 

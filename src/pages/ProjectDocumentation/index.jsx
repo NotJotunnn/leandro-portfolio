@@ -5,6 +5,7 @@ import PageNotFound from "../PageNotFound";
 import TechIcon from "../../components/TechIcon";
 import Button from "../../components/Button";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 const ProjectDocumentation = () => {
   const { id } = useParams();
@@ -21,6 +22,10 @@ const ProjectDocumentation = () => {
     };
   });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   if (!projects.some((project) => project.summary.id === id))
     return <PageNotFound />;
 
@@ -28,7 +33,11 @@ const ProjectDocumentation = () => {
     <div className={styles.projectDocumentation}>
       <div className={styles.projectDocumentationWrapper}>
         <div className={styles.thumbnail}>
-          <img loading="lazy" src={currentProject.summary.thumb} alt="Thumbnail do projeto" />
+          <img
+            loading="lazy"
+            src={currentProject.summary.thumb}
+            alt="Thumbnail do projeto"
+          />
         </div>
         <table>
           <thead>

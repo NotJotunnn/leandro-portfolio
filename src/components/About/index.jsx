@@ -9,11 +9,11 @@ const About = () => {
       <div className={styles.aboutWrapper}>
         <div className={styles.col1}>
           <div className={styles.imageBackground} id={styles.desktop}>
-            <img loading="lazy" src="/assets/graduacao3.png" alt="" />
+            <img loading="lazy" src="assets/graduacao3.png" alt="Foto minha" />
           </div>
         </div>
         <div className={styles.col2}>
-          <img loading="lazy" src="/assets/graduacao2.png" alt="Foto minha" className="hidden" id={styles.mobile} />
+          <img loading="lazy" src="assets/graduacao2.png" alt="Foto minha" className="hidden" id={styles.mobile} />
 
           <h2>Sobre mim</h2>
 
@@ -58,7 +58,7 @@ const About = () => {
               aria-label="Veja meu currículo"
               rel="canonical"
               target="_blank"
-              href="./assets/Leandro-Ferreira-250422.pdf"
+              href="assets/Leandro-Ferreira-250627.pdf"
             >
               <Button>Baixar currículo</Button>
             </a>

@@ -6,7 +6,6 @@ import CertificatePage from "../CertificatePage";
 import StudyPage from "../StudyPage";
 import TestimonialPage from "../TestimonialPage";
 
-// TODO add popup component for viewing images
 const PageContainer = () => {
   const position = useSelector((state) => state.position);
 

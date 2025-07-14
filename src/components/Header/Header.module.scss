@@ -39,6 +39,11 @@ header {
   height: 100%;
 
   & img {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
     height: 30px;
     cursor: pointer;
   }
