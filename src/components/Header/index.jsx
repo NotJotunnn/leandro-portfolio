@@ -22,7 +22,7 @@ const Header = () => {
         hash: "#Home",
       });
 
-    if (!(sidebarInvisible) && !(window.innerWidth > 600))
+    if (sidebarInvisible && !(window.innerWidth > 600))
       dispatch(toggleSidebar());
   };
 
