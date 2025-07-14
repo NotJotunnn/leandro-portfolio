@@ -2,6 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
   {
+    title: "CSSstudies",
+    url: "https://github.com/NotJotunnn/CSSstudies",
+    description: "Some of my favorite little css studies",
+  },
+  {
     title: "E-commerce-Project",
     url: "https://github.com/NotJotunnn/E-commerce-Project",
     description:
