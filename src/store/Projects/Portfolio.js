@@ -25,10 +25,6 @@ const page = {
 
   <p>${summary.description}</p>
 
-  <h2>O projeto</h2>
-
-  <p><span class="highlight">Redesign</span> completo do meu <span class="highlight">Portfólio</span> antigo! Feito para trazer mais em dia com o que <span class="highlight">produzo</span> (logo é de <span class="highlight">altíssima importância</span> o update!). Utilizei <span class="highlight">Vite</span>, <span class="highlight">Github Pages</span> para lidar com hosteamento, <span class="highlight">React Router</span> para lidar com a navegação, <span class="highlight">Redux</span> para os dados e <span class="highlight">React Icon</span> para lidar com os ícones que usei pelas páginas!</p>
-
   <h2>Problemas!</h2>
 
   <p>Após um tempo trabalhando na área, um dos elementos de contato mais importantes meu (meu portfólio), estava desatualizado. Não apenas isso como muito do que aprendi e ganhei, não eram demonstrados!</p>
