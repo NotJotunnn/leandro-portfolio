@@ -11,7 +11,7 @@ const initialState = [
     },
     skills: ["Redux toolkit", "Saga"],
     thumb:
-      "assets/experiences/certificates/React utilizando a arquitetura Saga com Redux Saga.png",
+      "assets/experiences/certificates/ReactutilizandoaarquiteturaSagacomReduxSaga.png",
   },
   {
     title: "JavaScript: Programação Orientada a Objetos",
@@ -22,7 +22,7 @@ const initialState = [
       url: "https://cursos.alura.com.br/certificate/e39d1def-ada0-4556-9109-41c8cbe22e06?lang",
     },
     skills: ["Git", "Object-Oriented Programming (OOP)", "Node.js", "GitHub"],
-    thumb: "assets/experiences/certificates/Javascript orientado a objetos.png",
+    thumb: "assets/experiences/certificates/Javascriptorientadoaobjetos.png",
   },
   {
     title:
@@ -40,7 +40,7 @@ const initialState = [
       "Back-End Web Development",
     ],
     thumb:
-      "assets/experiences/certificates/NodeJS criando API Rest com autenticação, perfis de usuários e permissões.png",
+      "assets/experiences/certificates/NodeJScriandoAPIRestcomautenticacaoperfisdeusuariosepermissoes.png",
   },
   {
     title: "Node.js: Criptografia e tokens JWT",
@@ -58,7 +58,7 @@ const initialState = [
       "GitHub",
       "Back-End Web Development",
     ],
-    thumb: "assets/experiences/certificates/Nodejs criptografia e tokens JWT.png",
+    thumb: "assets/experiences/certificates/NodejscriptografiaetokensJWT.png",
   },
   {
     title: "Node.js: Implementando testes em uma API Rest",
@@ -95,7 +95,7 @@ const initialState = [
       "Passport.js",
       "Docker",
     ],
-    thumb: "assets/experiences/certificates/NodeJS Autenticação, Passport e OAuth 2 0.png",
+    thumb: "assets/experiences/certificates/NodeJSAutenticacaoPassporteOAuth20.png",
   },
   {
     title: "React: Avançando em Middlewares com Listener Middleware",
@@ -107,7 +107,7 @@ const initialState = [
     },
     skills: ["Redux Toolkit", "Axios"],
     thumb:
-      "assets/experiences/certificates/React avançando em Middlewares com Listener Middleware.png",
+      "assets/experiences/certificates/ReactavancandoemMiddlewarescomListenerMiddleware.png",
   },
   {
     title: "React: Entendendo Middlewares com Redux Thunk",
@@ -119,7 +119,7 @@ const initialState = [
     },
     skills: ["Redux toolkit", "Axios", "Redux Thunk"],
     thumb:
-      "assets/experiences/certificates/React entendendo Middlewares com Redux Thunk.png",
+      "assets/experiences/certificates/ReactentendendoMiddlewarescomReduxThunk.png",
   },
   {
     title: "React: Gerenciamento de estados globais com Redux",
@@ -131,7 +131,7 @@ const initialState = [
     },
     skills: ["Redux toolkit"],
     thumb:
-      "assets/experiences/certificates/React gerenciamento de estados globais com Redux.png",
+      "assets/experiences/certificates/ReactgerenciamentodeestadosglobaiscomRedux.png",
   },
   {
     title: "React: Mutabilidade x Imutabilidade no Redux Toolkit com Immer",
@@ -143,7 +143,7 @@ const initialState = [
     },
     skills: ["Redux toolkit"],
     thumb:
-      "assets/experiences/certificates/React Mutabilidade x Imutabilidade no Redux Toolkit com Immer.png",
+      "assets/experiences/certificates/ReactMutabilidadexImutabilidadenoReduxToolkitcomImmer.png",
   },
   {
     title: "JavaScript Algorithms and Data Structures",
@@ -161,7 +161,7 @@ const initialState = [
       "REST APIs",
       "Node.js",
     ],
-    thumb: "assets/experiences/certificates/javascript algo.png",
+    thumb: "assets/experiences/certificates/javascriptalgo.png",
   },
   {
     title: "Node.js: Testes unitários e de integração",
@@ -181,7 +181,7 @@ const initialState = [
       "Back-End Web Development",
     ],
     thumb:
-      "assets/experiences/certificates/Certificado de node integração de testes alura.png",
+      "assets/experiences/certificates/Certificadodenodeintegracaodetestesalura.png",
   },
   {
     title: "Graduação em Ciências da computação",
@@ -213,7 +213,7 @@ const initialState = [
       "Back-End Web Development",
     ],
     thumb:
-      "assets/experiences/certificates/RVDD_Leandro_Ferreira.png",
+      "assets/experiences/certificates/RVDDLeandroFerreira.png",
   },
   {
     title: "Responsive Web Design",
@@ -350,7 +350,7 @@ const initialState = [
     },
     skills: [],
     thumb:
-      "assets/experiences/certificates/CERTIFICADO CONQUER DE INTELIGÊNCIA EMOCIONAL.png",
+      "assets/experiences/certificates/CERTIFICADOCONQUERDEINTELIGENCIAEMOCIONAL.png",
   },
   {
     title: "Aprender a aprender: técnicas para seu autodesenvolvimento",
@@ -361,7 +361,7 @@ const initialState = [
       url: "https://cursos.alura.com.br/certificate/e1a92c12-75fe-45d1-94a1-66b35bf9e22e?lang",
     },
     skills: [],
-    thumb: "assets/experiences/certificates/Certificado de aprender a aprender alura.png",
+    thumb: "assets/experiences/certificates/Certificadodeaprenderaaprenderalura.png",
   },
   {
     title: "Campus Party",
