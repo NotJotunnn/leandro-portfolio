@@ -2,9 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
   {
-    title: "CSSstudies",
-    url: "https://github.com/NotJotunnn/CSSstudies",
-    description: "Some of my favorite little css studies",
+    title: "leandro-portfolio",
+    url: "https://github.com/NotJotunnn/leandro-portfolio",
+    description: "N/A",
     star: true,
   },
   {
@@ -12,6 +12,18 @@ const initialState = [
     url: "https://github.com/NotJotunnn/E-commerce-Project",
     description:
       "Real life study of a company and development of an E-commerce",
+    star: true,
+  },
+  {
+    title: "CSSstudies",
+    url: "https://github.com/NotJotunnn/CSSstudies",
+    description: "Some of my favorite little css studies",
+    star: true,
+  },
+  {
+    title: "Games",
+    url: "https://github.com/NotJotunnn/Games",
+    description: "A few of the games a have produced in a while!",
     star: true,
   },
   {
