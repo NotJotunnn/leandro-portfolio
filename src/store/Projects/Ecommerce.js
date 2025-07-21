@@ -9,7 +9,7 @@ const summary = {
     figma: "",
   },
   thumb: "assets/projects/Ecommerce/thumb.png",
-  tech: ["postgres", "nodejs", "jwt", "jest", "docker", "express", "eslint"],
+  tech: ["postgres", "nodejs", "jwt", "jest", "docker", "express", "eslint", "knex"],
 };
 
 const page = {
