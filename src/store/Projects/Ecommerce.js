@@ -1,7 +1,7 @@
 const summary = {
   id: "ecommerce",
   name: "E-commerce KRS",
-  description: `Desenvolvi um e-commerce backend com autenticação, paginação de produtos e controle de permissões, usando Postgres e Node.js. O projeto, inspirado na empresa KRS, priorizou escalabilidade e testes robustos (95% de cobertura). Destaques incluem rotas como /produtos (CRUD paginado) e /auth/login (JWT), além de hierarquia de usuários (comum/admin).`,
+  description: `E-commerce backend com <span class="highlight">autenticação</span>, <span class="highlight">paginação</span> de produtos e <span class="highlight">controle de permissões</span>, usando <span class="highlight">Postgres</span> e <span class="highlight">Node.js</span>. O projeto, <span class="highlight">inspirado</span> na empresa KRS, priorizo <span class="highlight">escalabilidade</span> e testes <span class="highlight">robustos</span> (95% de cobertura). Destaques incluem rotas como /produtos (CRUD paginado) e /auth/login (JWT), além de <span class="highlight">hierarquia de usuários</span> (comum/admin).`,
   links: {
     github: "https://github.com/NotJotunnn/E-commerce-Project",
     documentation: "/projects/ecommerce",
