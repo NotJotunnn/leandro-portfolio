@@ -34,6 +34,8 @@ const page = {
 
   <p>Ele conta com sistema de autenticação, paginação de produtos, histórico de compras e permissões de usuário!</p>
 
+  <p>O projeto também é organizado para fácil leitura, contando com Controllers, Services e Rotas em si (além do util ou outro para componentizar funções importantes).</p>
+
   <h2>Problemas!</h2>
 
   <p>Esse projeto foi baseado de uma empresa real KRS, eles trabalham bastante com serviços de instalação de equipamento de som em igrejas e relacionados. Por se relacionarem ao serviços de instalamento, achei bastante intuitivo terem uma loja e-commerce pra justamente vender esses produtos de forma mais direcionada enquanto ainda mantendo a possibilidade de fornecer seus serviços de instalamento.</p>
