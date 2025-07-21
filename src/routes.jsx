@@ -6,16 +6,16 @@ import ProjectDocumentation from "./pages/ProjectDocumentation";
 
 const Router = () => {
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <Routes>
         <Route path="/" element={<PageLayout />}>
-          <Route index element={<Home />}/>
-          <Route path="/projects/:id" element={<ProjectDocumentation />}/>
-          <Route path="*" element={<PageNotFound />}/>
+          <Route index element={<Home />} />
+          <Route path="/projects/:id" element={<ProjectDocumentation />} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </HashRouter>
   );
-}
- 
+};
+
 export default Router;
