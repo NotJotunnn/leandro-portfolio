@@ -1,6 +1,19 @@
 import { FaDocker, FaFigma, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
 import { RiExternalLinkLine, RiGithubLine, RiNextjsFill } from "react-icons/ri";
-import { SiAxios, SiExpress, SiJest, SiJsonwebtokens, SiKnexdotjs, SiPostgresql, SiPrisma, SiReactrouter, SiRedux, SiTypescript, SiVite } from "react-icons/si";
+import {
+  SiAxios,
+  SiEslint,
+  SiExpress,
+  SiJest,
+  SiJsonwebtokens,
+  SiKnexdotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiReactrouter,
+  SiRedux,
+  SiTypescript,
+  SiVite,
+} from "react-icons/si";
 
 const TechIcon = ({ name, hasLink, ...otherProps }) => {
   const title = hasLink ? `${name} (link)` : name;
@@ -24,6 +37,7 @@ const TechIcon = ({ name, hasLink, ...otherProps }) => {
     knex: SiKnexdotjs,
     jest: SiJest,
     jwt: SiJsonwebtokens,
+    eslint: SiEslint,
   };
 
   const IconComponent = iconsArray[name];
