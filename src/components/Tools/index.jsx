@@ -17,7 +17,16 @@ const Tools = () => {
     "Vite",
     "Sass",
     "React Router",
-    "Styled Components"
+    "Styled Components",
+    "Knex",
+    "Eslint",
+    "Postgres",
+    "Nodejs",
+    "JWT",
+    "Jest",
+    "Docker",
+    "Expressjs",
+    "Axios"
   ])
 
   return (
