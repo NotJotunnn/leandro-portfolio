@@ -17,8 +17,8 @@ const page = {
   durationMetric: "Mês",
   startDate: "17 Junho, 2025",
   endDate: "21 Julho, 2025",
-  githubRepoStatus: "https://github.com/NotJotunnn/E-commerce-Project",
-  jobs: ["Programador"],
+  githubRepoStatus: "Aberto",
+  jobs: ["Desenvolvedor Backend"],
   client: "Fictício (baseado na KRS)",
   clientSocial: "",
   content: `
