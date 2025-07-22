@@ -9,7 +9,7 @@ const summary = {
     figma: "",
   },
   thumb: "assets/projects/Portfolio/thumb.png",
-  tech: ["reactRouter", "vite", "redux", "sass", "eslint"],
+  tech: ["reactRouter", "react", "vite", "redux", "sass", "eslint"],
 };
 const page = {
   duration: 1,
