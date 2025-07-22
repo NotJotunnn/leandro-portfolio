@@ -119,8 +119,6 @@ h6 {
 }
 
 .hidden {
-  transform: translateX(-500px);
-
   opacity: 0;
 }
 
@@ -157,16 +155,12 @@ h6 {
 
 @media (max-width: 1024px) {
   .hidden {
-    transform: translateX(0);
-
     opacity: 0;
   }
 }
 
 @media (max-width: 600px) {
   .hidden {
-    transform: translateX(0);
-
     opacity: 0;
   }
 
