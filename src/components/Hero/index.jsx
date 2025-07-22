@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
           <div className="buttonGroup hidden" id={styles.buttonGroup}>
             <Link to={{hash: "#Contact"}}><Button>Entrar em contato</Button></Link>
-            <a rel="canonical" aria-label="Veja mais sobre meu currículo" download href={"assets/Leandro-Ferreira-250715.pdf"}><Button>Baixar currículo</Button></a>
+            <a rel="canonical" aria-label="Veja mais sobre meu currículo" download href={"assets/Leandro-Ferreira-250721.pdf"}><Button>Baixar currículo</Button></a>
           </div>
         </div>
         <div className={styles.col2} id={styles.desktop}>

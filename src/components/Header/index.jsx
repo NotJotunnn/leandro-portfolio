@@ -33,39 +33,26 @@ const Header = () => {
       }
     >
       <div className={styles.headerWrapper}>
-        <img loading="lazy" onClick={() => handleNavigateClick(true)} src="/assets/Logo.svg" alt="Logo" />
+        <img
+          loading="lazy"
+          onClick={() => handleNavigateClick(true)}
+          src="/assets/Logo.svg"
+          alt="Logo"
+        />
         <nav className={styles.navigation} id={styles.desktop}>
           <ul>
             <li>
-              <Link
-                to={{
-                  pathname: "/",
-                  hash: "#About",
-                }}
-                aria-label="Ir para Sobre mim"
-              >
+              <Link to={"/#About"} aria-label="Ir para Sobre mim">
                 Sobre mim
               </Link>
             </li>
             <li>
-              <Link
-                to={{
-                  pathname: "/",
-                  hash: "#Project",
-                }}
-                aria-label="Ir para Projetos"
-              >
+              <Link to={"/#Project"} aria-label="Ir para Projetos">
                 Projetos
               </Link>
             </li>
             <li>
-              <Link
-                to={{
-                  pathname: "/",
-                  hash: "#Contact",
-                }}
-                aria-label="Ir para contato"
-              >
+              <Link to={"/#Contact"} aria-label="Ir para contato">
                 Contato
               </Link>
             </li>
