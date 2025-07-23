@@ -14,7 +14,7 @@
   stroke: black;
   stroke-width: 30px;
 
-  translate: -20% 20px;
+  translate: 10px;
 
   filter: drop-shadow(2px 2px 2px black);
 
@@ -28,7 +28,6 @@
 
   pointer-events: none;
 
-
   &.invisible {
     opacity: 0;
 
@@ -40,60 +39,60 @@
 
 @keyframes interactable {
   0% {
-    translate: -155% 0px;
+    translate: -170px;
   }
   15% {
-    translate: -155% 0px;
+    translate: -170px;
     rotate: 0deg;
   }
   30% {
-    translate: -155% 0px;
+    translate: -170px;
   }
   35% {
-    translate: -155% 0px;
+    translate: -170px;
     rotate: -8deg;
   }
   40% {
-    translate: -155% 0px;
+    translate: -170px;
     rotate: 0deg;
   }
   45% {
-    translate: -95% 0px;
+    translate: -110px;
   }
   50% {
-    translate: -95% 0px;
+    translate: -110px;
     rotate: -8deg;
   }
   55% {
-    translate: -95% 0px;
+    translate: -110px;
     rotate: 0deg;
   }
   60% {
-    translate: -35% 0px;
+    translate: -50px;
   }
   65% {
-    translate: -35% 0px;
+    translate: -50px;
     rotate: -8deg;
   }
   70% {
-    translate: -35% 0px;
+    translate: -50px;
     rotate: 0deg;
   }
   75% {
-    translate: 25% 0px;
+    translate: 10px;
   }
   80% {
-    translate: 25% 0px;
+    translate: 10px;
     rotate: -8deg;
   }
   85% {
-    translate: 25% 0px;
+    translate: 10px;
   }
   90% {
-    translate: 25% 0px;
+    translate: 10px;
   }
   100% {
-    translate: -155% 0px;
+    translate: -170px;
   }
 }
 
@@ -118,7 +117,7 @@
     justify-content: space-around;
     align-items: center;
 
-    width: 60vw;
+    width: 260px;
 
     padding: 10px;
 
