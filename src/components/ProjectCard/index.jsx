@@ -27,7 +27,7 @@ const ProjectCard = (props) => {
         <Link
           target="_blank"
           to={
-            summary.links.externalLink ||
+            summary.links.external ||
             summary.links.github ||
             summary.links.figma
           }
@@ -83,10 +83,10 @@ const ProjectCard = (props) => {
                   </li>
                 </Link>
               )}
-              {summary.links?.externalLink && (
+              {summary.links?.external && (
                 <Link
                   target="_blank"
-                  to={summary.links.externalLink}
+                  to={summary.links.external}
                   aria-label="Ir para projeto"
                   rel="external"
                 >
@@ -129,10 +129,10 @@ const ProjectCard = (props) => {
                   </li>
                 </Link>
               )}
-              {summary.links?.externalLink && (
+              {summary.links?.external && (
                 <Link
                   target="_blank"
-                  to={summary.links.externalLink}
+                  to={summary.links.external}
                   aria-label="Ir para projeto"
                   rel="external"
                 >
