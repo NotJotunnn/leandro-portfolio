@@ -6,7 +6,7 @@ const summary = {
     github:
       "https://github.com/NotJotunnn/creditos/blob/main/lokinhoRifas/creditos.md",
     documentation: "/projects/lokinhoskins",
-    external: "",
+    external: "https://lokinho-rifas-two.vercel.app/",
     figma:
       "https://www.figma.com/design/feYuEQLDM3VR9mtq3xou60/LOKINHO-SKYNS--Copy-?node-id=0-1&t=Zda0RwHdae2P28NZ-1",
   },
