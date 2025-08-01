@@ -16,8 +16,8 @@ const summary = {
 const page = {
   duration: 1,
   durationMetric: "Semana",
-  startDate: "Fevereiro, 2024",
-  endDate: "Fevereiro, 2024",
+  startDate: "Julho 1, 2025",
+  endDate: "Julho 31, 2025",
   githubRepoStatus: "Aberto! 🥳",
   jobs: ["Designer", "Desenvolvedor Frontend"],
   client: "Churrascos Ferreira",
