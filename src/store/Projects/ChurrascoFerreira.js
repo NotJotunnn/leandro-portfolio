@@ -14,8 +14,8 @@ const summary = {
 };
 
 const page = {
-  duration: 1,
-  durationMetric: "Semana",
+  duration: 4,
+  durationMetric: "Semanas",
   startDate: "Julho 1, 2025",
   endDate: "Julho 31, 2025",
   githubRepoStatus: "Aberto! 🥳",
