@@ -11,6 +11,7 @@ import {
   SiPrisma,
   SiReactrouter,
   SiRedux,
+  SiTailwindcss,
   SiTypescript,
   SiVite,
 } from "react-icons/si";
@@ -38,6 +39,7 @@ const TechIcon = ({ name, hasLink, ...otherProps }) => {
     jest: SiJest,
     jwt: SiJsonwebtokens,
     eslint: SiEslint,
+    tailwindcss: SiTailwindcss
   };
 
   const IconComponent = iconsArray[name];

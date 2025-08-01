@@ -3,14 +3,14 @@ const summary = {
   name: "Churrascos Ferreira",
   description: `Design completo do <span class="highlight">site</span> para Churrascos Ferreira no <span class="highlight">Figma</span>, criando uma <span class="highlight">experiência visual moderna</span> e <span class="highlight">altamente funcional</span>. O projeto <span class="highlight">prioriza</span> a <span class="highlight">conversão com call-to-actions estratégicos</span>, <span class="highlight">galeria interativa de serviços</span> e <span class="highlight">cardápio em formato pop-up</span>, tudo integrado a uma estrutura <span class="highlight">mobile-first</span>. Utilizei uma paleta de cores <span class="highlight">sóbria</span> baseada na identidade da marca, com componentes <span class="highlight">reutilizáveis</span> como cards <span class="highlight">animados</span> e seções de <span class="highlight">depoimentos</span> visuais, <span class="highlight">garantindo</span> uma navegação <span class="highlight">intuitiva</span> tanto em <span class="highlight">desktop</span> quanto <span class="highlight">dispositivos móveis</span>.`,
   links: {
-    github: "",
+    github: "https://github.com/NotJotunnn/churrascosFerreira",
     documentation: "/projects/churrascosferreira",
-    external: "",
+    external: "https://www.churrascosferreira.com.br",
     figma:
       "https://www.figma.com/design/FJMrClD4aNqdKMHQLaGfQ7/Projeto-Churrasco?node-id=0-1&t=NgUOMlZXZIcBUQuc-1",
   },
   thumb: "assets/projects/ChurrascoFerreira/thumb.png",
-  tech: ["figma"],
+  tech: ["figma", "nextjs", "eslint", "typescript", "react", "nodejs", "tailwindcss"],
 };
 
 const page = {
@@ -18,12 +18,16 @@ const page = {
   durationMetric: "Semana",
   startDate: "Fevereiro, 2024",
   endDate: "Fevereiro, 2024",
-  githubRepoStatus: "Indisponível (Por enquanto!)",
-  jobs: ["Designer"],
+  githubRepoStatus: "Aberto! 🥳",
+  jobs: ["Designer", "Desenvolvedor Frontend"],
   client: "Churrascos Ferreira",
   clientSocial:
     "https://www.instagram.com/churrascosferreiradf?igsh=bDhyeW5xY2FuOHlw&utm_source=qr",
   content: `
+  <h2>Atualização de 1 de Agosto!</h2>
+
+  Oficialmente o site está de pé!, o github disponível. Esse projeto foi uma grande evolução minha como desenvolvedor, e espero que consigam notar o avanço ao todo! Novamente agradeço à empresa <a target="_blank" href="https://www.instagram.com/churrascosferreiradf?igsh=bDhyeW5xY2FuOHlw&utm_source=qr">Churrascos Ferreira</a> pela oportunidade e por terem escolhido seguir com meus serviços!
+
   <h2>O resumo</h2>
 
   <p>${summary.description}</p>
