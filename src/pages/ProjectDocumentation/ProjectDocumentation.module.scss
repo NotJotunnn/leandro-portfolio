@@ -121,6 +121,11 @@
     line-height: 24px;
 
     font-family: "Roboto", sans-serif;
+
+    & .highlight {
+      font-weight: medium;
+      color: black;
+    }
   }
 
   & ul {

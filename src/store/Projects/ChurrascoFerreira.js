@@ -1,7 +1,7 @@
 const summary = {
   id: "churrascosferreira",
   name: "Churrascos Ferreira",
-  description: `Design completo do <span class="highlight">site</span> para Churrascos Ferreira no <span class="highlight">Figma</span>, criando uma <span class="highlight">experiência visual moderna</span> e <span class="highlight">altamente funcional</span>. O projeto <span class="highlight">prioriza</span> a <span class="highlight">conversão com call-to-actions estratégicos</span>, <span class="highlight">galeria interativa de serviços</span> e <span class="highlight">cardápio em formato pop-up</span>, tudo integrado a uma estrutura <span class="highlight">mobile-first</span>. Utilizei uma paleta de cores <span class="highlight">sóbria</span> baseada na identidade da marca, com componentes <span class="highlight">reutilizáveis</span> como cards <span class="highlight">animados</span> e seções de <span class="highlight">depoimentos</span> visuais, <span class="highlight">garantindo</span> uma navegação <span class="highlight">intuitiva</span> tanto em <span class="highlight">desktop</span> quanto <span class="highlight">dispositivos móveis</span>.`,
+  description: `Design e desenvolvimento completo do <span class="highlight">site</span> para Churrascos Ferreira no <span class="highlight">Figma</span>, criando uma <span class="highlight">experiência visual moderna</span> e <span class="highlight">altamente funcional</span>. O projeto <span class="highlight">prioriza</span> a <span class="highlight">conversão com call-to-actions estratégicos</span>, <span class="highlight">galeria interativa de serviços</span> e <span class="highlight">cardápio em formato pop-up</span>, tudo integrado a uma estrutura <span class="highlight">mobile-first</span>. Utilizei uma paleta de cores <span class="highlight">sóbria</span> baseada na identidade da marca, com componentes <span class="highlight">reutilizáveis</span> como cards <span class="highlight">animados</span> e seções de <span class="highlight">depoimentos</span> visuais, <span class="highlight">garantindo</span> uma navegação <span class="highlight">intuitiva</span> tanto em <span class="highlight">desktop</span> quanto <span class="highlight">dispositivos móveis</span>.`,
   links: {
     github: "https://github.com/NotJotunnn/churrascosFerreira",
     documentation: "/projects/churrascosferreira",
@@ -26,7 +26,7 @@ const page = {
   content: `
   <h2>Atualização de 1 de Agosto!</h2>
 
-  Oficialmente o site está de pé!, o github disponível. Esse projeto foi uma grande evolução minha como desenvolvedor, e espero que consigam notar o avanço ao todo! Novamente agradeço à empresa <a target="_blank" href="https://www.instagram.com/churrascosferreiradf?igsh=bDhyeW5xY2FuOHlw&utm_source=qr">Churrascos Ferreira</a> pela oportunidade e por terem escolhido seguir com meus serviços!
+  <p>Oficialmente o site está de pé!, o github disponível. Esse projeto foi uma grande evolução minha como desenvolvedor, e espero que consigam notar o avanço ao todo! Novamente agradeço à empresa <a target="_blank" href="https://www.instagram.com/churrascosferreiradf?igsh=bDhyeW5xY2FuOHlw&utm_source=qr">Churrascos Ferreira</a> pela oportunidade e por terem escolhido seguir com meus serviços!</p>
 
   <h2>O resumo</h2>
 
