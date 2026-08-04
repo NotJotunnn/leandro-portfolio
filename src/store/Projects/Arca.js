@@ -16,7 +16,7 @@ const summary = {
     "react",
     "typescript",
     "supabase",
-    "postgresql",
+    "postgres",
     "prisma",
     "tailwindcss",
     "jest",

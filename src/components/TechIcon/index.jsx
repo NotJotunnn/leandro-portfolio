@@ -1,5 +1,7 @@
-import { FaDocker, FaFigma, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
-import { RiExternalLinkLine, RiGithubLine, RiNextjsFill } from "react-icons/ri";
+import { AiFillOpenAI } from "react-icons/ai";
+import { FaCcStripe, FaDocker, FaFigma, FaGoogle, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
+import { LuDrama } from "react-icons/lu";
+import { RiExternalLinkLine, RiGithubLine, RiNextjsFill, RiSupabaseFill } from "react-icons/ri";
 import {
   SiAxios,
   SiEslint,
@@ -39,7 +41,12 @@ const TechIcon = ({ name, hasLink, ...otherProps }) => {
     jest: SiJest,
     jwt: SiJsonwebtokens,
     eslint: SiEslint,
-    tailwindcss: SiTailwindcss
+    tailwindcss: SiTailwindcss,
+    playwright: LuDrama,
+    supabase: RiSupabaseFill,
+    openai: AiFillOpenAI,
+    googleapis: FaGoogle,
+    stripe: FaCcStripe
   };
 
   const IconComponent = iconsArray[name];

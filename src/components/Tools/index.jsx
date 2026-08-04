@@ -3,7 +3,7 @@ import styles from "./Tools.module.scss";
 
 const Tools = () => {
   const [ tools ] = useState([
-    "HTML/CSS",
+    "HTML",
     "Javascript",
     "ReactJS",
     "NextJS",
@@ -26,7 +26,12 @@ const Tools = () => {
     "Jest",
     "Docker",
     "Expressjs",
-    "Axios"
+    "Axios",
+    "Playwright",
+    "Supabase",
+    "Openai",
+    "Googleapis",
+    "Stripe"
   ])
 
   return (

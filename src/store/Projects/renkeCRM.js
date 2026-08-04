@@ -15,7 +15,7 @@ const summary = {
     "vite",
     "nestjs",
     "nodejs",
-    "postgresql",
+    "postgres",
     "sequelize",
     "zod",
     "jest",
