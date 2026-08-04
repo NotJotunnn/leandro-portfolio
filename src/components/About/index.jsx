@@ -58,7 +58,7 @@ const About = () => {
               aria-label="Veja meu currículo"
               rel="canonical"
               target="_blank"
-              href="assets/Leandro-Ferreira-250721.pdf"
+              href="assets/Leandro-Ferreira-260804.pdf"
             >
               <Button>Baixar currículo</Button>
             </a>
