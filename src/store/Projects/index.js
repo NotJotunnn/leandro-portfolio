@@ -6,6 +6,6 @@ import Arca from "./arca";
 import CasamentoHugoGabriela from "./CasamentoHugo&Gabriela";
 import Capisite from "./Capisite";
 
-const projects = [LokinhoSkins, ChurrascoFerreira, Portfolio, Ecommerce, Arca, CasamentoHugoGabriela, Capisite];
+const projects = [LokinhoSkins, ChurrascoFerreira, Arca, CasamentoHugoGabriela, Capisite];
 
 export default projects;
